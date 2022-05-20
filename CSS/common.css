@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #5B5A76;
+    --alternate-color: white;
+    --secondary-color: #A6A6A6;
+    --navbar-color: #7892BD;
+    --toggle-button-on-color: #5B5A76;
+    --toggle-button-off-color: #7892BD;
+    --in-use-color: #E19A17;
+    --available-color: #7EC6AD;
+    --background-color: white;
+    --divider-color: rgba(91, 90, 118, 0.2);
+    --thumb-border-color: #eeeeee;
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #5B5A76;
+}
