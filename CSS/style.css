@@ -265,16 +265,49 @@ a.active,a:hover{
 /*STUDENT-SECTION*/
 
 .students-page{
-    height: 100vh;
+    height: fit-content;
 }
-.students-page .students-contents-section{
-    padding: 15px;
-}
+
 .students-contents-section .students-tittle{
-    width: 50%;
+    width: 80%;
     margin: auto;
     font-size: 24px;
     padding-top: 16px;
+}
+.students-contents-section .students-image{
+    background-image: url("../assets/students.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    background-color: rgb(86, 86, 239);
+    background-blend-mode: soft-light;
+}
+.students-contents-section .tittle{
+    position: absolute;
+    color: white;
+    top: 24%;
+    left: 10%;
+    transform: translate(-24%, -10%);
+    font-size: 36px;
+}
+.students-contents-section .students-text{
+    color: white;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+}
+.students-contents-section .students-text p{
+    width: 75%;
+    margin: auto;
+    font-size: 22px;
+    line-height: 32px;
 }
 .students-contents-section .students-body-section{
     width: 75%;
@@ -308,16 +341,12 @@ a.active,a:hover{
     font-size: 24px;
     padding-bottom: 16px;
 }
-
-
-
-
-
-
-
-
-
-
+.students-body-section .abroad .abroad-content a{
+    text-decoration: underline;
+}
+.students-body-section .abroad .abroad-content a:hover{
+    background-color: transparent;
+}
 
 /*MOBILE VIEW*/
 
@@ -465,5 +494,43 @@ a.active,a:hover{
  .contact .container .container-item span{
      font-size: 16px;
  }
+
+ /*STUDENTS MOBILE VIEW*/
+ .students-contents-section .students-tittle{
+    width: 75%;
+    margin: auto;
+    font-size: 20px;
+}
+.students-contents-section .students-body-section{
+    width: 100%;
+}
+.students-body-section .abroad{
+    display: flex;
+    flex-direction: column;
+}
+.students-body-section .abroad .icon-section{
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+.students-body-section .abroad .icon-section i{
+    font-size: 100px;
+}
+.students-body-section .abroad .abroad-content h3{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 8px;
+    margin-top: -24px;
+}
+.students-body-section .abroad .abroad-content p{
+    width: 90%;
+    margin: auto;
+}
+.students-body-section .abroad .abroad-content a{
+    margin-left: 30px;
+}
+.students-body-section .abroad .abroad-content a:hover{
+    background-color: transparent;
+}
 
 }
