@@ -7,6 +7,10 @@
     <title>iaeste-kenya</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@200;400&display=swap"rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,23 +18,51 @@
 <body>
 
      <!--==nav bar start==-->
-     <s                                                                                                                                                                                                                                                                                                               ection class="header">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-            </label>
-            <div class="header-image">
-                <img src="assets/iaeste.png" alt="">                                                                                                             
-                <p><span>IAESTE</span><br>KENYA</p>
+     <nav class="nav" id="nav">
+        <div class="nav-center">
+            <div class="nav-header">
+  
+                <div class="header-image">
+                    <img src="./assets/iaeste.png" alt="IASTE">
+                    <p><span>IAESTE</span><br>KENYA</p> 
+                </div>
+             <button class="logo-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
-            <ul>
-              <li><a class="active" href="index.html">About</a></li>
-              <li><a href="students.html">Students</a></li>
-              <li><a href="#">Employers</a></li>
-            </ul>
-          </nav>
-      </section>
+           <ul class="nav-links">
+               <li class="nav-link">
+                   <a href="index.html">ABOUT IASTE</a>
+               </li>
+               <li class="nav-link">
+                  <a href="students.html">STUDENTS</a>
+              </li>
+              <li class="nav-link">
+                  <a href="#">EMPLOYERS</a>
+              </li>
+            
+           </ul>   
+        </div>
+    </nav>
+  
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">ABOUT IAESTE</a>
+          </li>
+          <li>
+            <a href="students.html">STUDENTS</a>
+          </li>
+          <li>
+            <a href="#">EMPLOYERS</a>
+          </li>
+         
+        </ul>
+        </div>
+    </aside>
       <!--==nav bar end==-->
 
       <!--===students page section start-->
@@ -106,6 +138,10 @@
         </div>
     </section>
     <!--===footer end===-->
+
+    <script src="./JS/app.js"></script>
+
     
+
 </body>
 </html>
