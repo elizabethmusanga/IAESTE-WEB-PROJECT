@@ -1,0 +1,720 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+/*navbar*/
+
+.header-image{
+    display: flex;
+}
+.header-image img{
+    height: 70px;
+    margin: 8px 0px 0px 20px;
+    color: #1b9bff;
+}
+
+.nav-center {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.header-image p{
+    color: #1b9bff;
+    padding: 24px 0px 0px 8px;
+    text-align: center;
+}
+span{
+    font-size: 20px;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.logo-btn {
+    border: none;
+    background-color: transparent;
+    color: #1b9bff;
+    font-size: 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    
+    .logo-btn {
+      display: none;
+    }
+    .nav-links {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      -webkit-column-gap: 2rem;
+      -moz-column-gap: 2rem;
+      column-gap: 1rem;
+      justify-self: end;
+    }
+    .nav-links a {
+      text-transform: capitalize;
+      color: #1b9bff;
+      font-weight: bold;
+      letter-spacing: 0.5rem;
+      -webkit-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+    }
+    .nav-links a:hover {
+    padding-top: 10px;
+    color: white;
+    }
+    .nav-center {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+  }
+
+
+  .navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #5A5B76;
+    z-index: 2;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#5A5B76;
+    color:#1b9bff;
+    z-index: 4;
+    display: grid;
+     align-items: center;
+    justify-content: center; 
+    place-items: center;
+    -webkit-transition: var(--transition);
+    transition: all ease 0.3s;
+    /* add later */
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.show-sidebar {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.sidebar-links {
+    text-align: center;
+}
+
+.sidebar-links a {
+    font-size: 2rem;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    color: #1b9bff;
+    letter-spacing: 0.25rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+.sidebar-links a:hover {
+    color: white;
+}
+
+.close-btn {
+    position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  background: transparent;
+  border: transparent;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: white;
+  cursor: pointer;
+}
+.close-btn:hover{
+    color: #1b9bff;
+}
+
+
+
+
+/*navbar*/
+
+/*BODY SECTION*/
+.body-section{
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+.body-section .body-section-contents{
+    width: 90%;
+    margin: auto;
+}
+.body-section .about-text{
+    padding-top: 10px;
+    border-bottom: 1px solid #5A5B76;
+}
+.body-section .about-text h3{
+    padding-bottom: 16px;
+}
+.body-section .about-text h1{
+    padding-bottom: 16px;
+    color:  #1b9bff;
+    font-size: 48px;
+}
+.body-section .about-text p{
+    line-height: 32px;
+    font-size: 24px;
+    width: 80%;
+    margin: auto;
+}
+.about-ending{
+    display: flex;
+    text-align: center;
+    margin-left: 24%;
+}
+
+.about-ending-item{
+    margin: 20px;
+    padding: 40px;
+}
+.about-ending-item a:hover{
+    background-color: white;
+}
+.about-ending .about-ending-item img{
+    height: 100px;
+}
+.about-ending .about-ending-item i{
+    font-size: 100px;
+}
+.body-map-container{
+    padding-bottom: 16px;
+}
+/*FOOTER*/
+
+.footer{
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #7892BD;
+    height: fit-content;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.footer-links .link-items{
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    margin-left: 32px;
+    color: white;
+    margin-top: 8px;
+}
+.footer-links .link-items p{
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+.footer-links .link-items a{
+    color: white;
+    padding: 0px;
+    font-weight: lighter;
+    line-height: 24px;
+    text-align: start;
+}
+.footer-links .link-items a:hover{
+    background-color: transparent;
+}
+.footer-content{
+    padding-top: 32px;
+}
+.footer-content .footer-social{
+    padding-bottom: 8px;
+}
+.footer-content .footer-social a{
+    font-size: 24px;
+    padding: 16px;
+}
+.footer-content .footer-social a:hover{
+    background-color: transparent;
+    text-decoration: none;
+}
+.footer-paragraph a{
+    text-decoration: underline;
+}
+.footer-paragraph a:hover{
+    background-color: transparent;
+}
+/*KENYA.HTML*/
+.iaeste-kenya .home-image{
+    background-image: url("../assets/about-image.jpeg");
+    height: 70vh;
+    width: 75%;
+    margin: auto;
+}
+.iaeste-kenya p{
+    margin: 32px 0px 20px 50px;
+    font-size: 32px;
+}
+.committee-text{
+    width: 90%;
+    margin: auto;
+}
+.committee-text p{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
+}
+.committee-text a{
+    text-decoration: underline;
+}
+.committee-text a:hover{
+    background-color: transparent;
+}
+.member-text{
+    text-align: center;
+    margin-top: 46px;
+}
+.member-text i{
+    font-size: 48px;
+}
+.member-text i:hover{
+    transform: rotate(180deg);
+    transition: all 0.9s ease-in-out;
+}
+.members{
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+.members .member-items{
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+}
+.members .member-items a:hover{
+    background: white;
+}
+.members .member-items img{
+    height: 100px;
+    width: auto;
+}
+.contact-container{
+    background-color: whitesmoke;
+}
+.contact{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 24px;
+}
+.contact .container-paragraph{
+    font-size: 22px;
+}
+
+.contact .container{
+    margin: 4px;
+    padding: 4px;
+    margin-top: 44px;
+}
+.contact .container .container-item{
+    display: flex;
+    padding: 8px;
+}
+.contact .container-item i{
+    padding-right: 8px;
+    font-size: 18px;
+}
+.container .container-item span{
+    font-size: 16px;
+    font-weight: 700;
+}
+.container .container-item a{
+    text-decoration: underline;
+}
+.container .container-item a:hover{
+    background-color: white;
+}
+
+/*STUDENT-SECTION*/
+
+.students-page{
+    height: fit-content;
+}
+
+.students-contents-section .students-image{
+    background-image: url("../assets/students.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    background-color: rgb(86, 86, 239);
+    background-blend-mode: soft-light;
+}
+.students-contents-section .tittle{
+    position: absolute;
+    color: white;
+    top: 24%;
+    left: 10%;
+    transform: translate(-24%, -10%);
+    font-size: 36px;
+}
+.students-contents-section .students-text{
+    color: white;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+}
+.students-contents-section .students-text p{
+    width: 75%;
+    margin: auto;
+    font-size: 22px;
+    line-height: 32px;
+}
+.students-contents-section .students-body-section{
+    width: 75%;
+    margin: auto;
+}
+
+.students-body-section .abroad{
+    display: flex;
+    padding-bottom: 32px;
+}
+.students-body-section .abroad .icon-section{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    margin-right: 16px;
+}
+.students-body-section .abroad .icon-section i{
+    font-size: 150px;
+}
+.students-body-section .abroad .abroad-content{
+    padding-top: 40px;
+}
+.students-body-section .abroad .abroad-content p{
+    font-size: 20px;
+}
+.students-body-section .abroad .abroad-content h3{
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+.students-body-section .abroad .abroad-content h3{
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+.students-body-section .abroad .abroad-content a{
+    text-decoration: underline;
+}
+.students-body-section .abroad .abroad-content a:hover{
+    background-color: transparent;
+}
+
+/*MOBILE VIEW*/
+
+@media (max-width: 768px){
+    /*NAV-MOBILE-VIEW*/
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px){
+  
+  /*BODY SECTION MOBILE VIEW*/
+  .body-section .body-section-contents{
+      width: 100%;
+      margin: auto;
+  }
+  .body-section-contents .about-text h1{
+      font-size: 24px;
+      font-weight: 700;
+  }
+  .body-section-contents .about-text p{
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 16px;
+      width: 100%;
+      margin: auto;
+  }
+  .about-ending{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      margin-left: 0px;
+  }
+  .about-ending-item{
+      padding: 40px;
+      margin: 8px;
+  }
+  .footer{
+      padding-bottom: 16px;
+  }
+  .footer .footer-links{
+      width: 100%;
+      margin: auto;
+      margin-left: 0px;
+      text-align: center;
+  }
+  .footer-links .link-items{
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .footer-links .link-items p{
+      font-size: 18px;
+  }
+  .footer-links .link-items a{
+      font-size: 15px;
+      padding: 0px;
+      font-weight: 400;
+  }
+ /*IAESTE KENYA MOBILE VIEW*/
+ .home-image{
+     margin-bottom: 30px;
+ }
+  .iaeste-kenya .home-image{
+    height: 50vh;
+    background-position: center;
+    width: 95%;
+    margin: auto;
+  }
+  .iaeste-kenya p{
+    margin: 32px 0px 8px 8px;
+    font-size: 24px;
+ }
+ .committee-text{
+    width: 100%;
+    margin: auto;
+}
+ .committee-text p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+ }
+ .members{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 40px;
+ }
+ .members .member-items{
+     width: 40%;
+     margin: auto;
+     margin: 8px 2px 8px 8px;
+ }
+ .members .member-items img{
+     height: 70px;
+ }
+ .member-text h2{
+    font-size: 22px;
+}
+ .member-text i{
+    font-size: 32px;
+ }
+ .contact{
+     width: 100%;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     padding-left: 15px;
+     padding-bottom: 0px;
+ }
+ .contact .container .container-item{
+     padding-bottom: 0px;
+     font-size: 16px;
+ }
+ .contact .container .container-item span{
+     font-size: 16px;
+ }
+
+ /*STUDENTS MOBILE VIEW*/
+ .students-contents-section .students-image{
+     height: 80vh;
+ }
+ .students-contents-section .tittle{
+    position: absolute;
+    top: 24%;
+    left: 40%;
+    transform: translate(-24%, -40%);
+    font-size: 36px;
+}
+.students-contents-section .students-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+}
+.students-contents-section .students-text p{
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 32px;
+}
+.students-contents-section .students-body-section{
+    width: 100%;
+}
+.students-body-section .abroad{
+    display: flex;
+    flex-direction: column;
+}
+.students-body-section .abroad .icon-section{
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+}
+.students-body-section .abroad .icon-section i{
+    font-size: 100px;
+}
+.students-body-section .abroad .abroad-content h3{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 8px;
+    margin-top: -24px;
+}
+.students-body-section .abroad .abroad-content p{
+    width: 90%;
+    margin: auto;
+}
+.students-body-section .abroad .abroad-content a{
+    margin-left: 30px;
+}
+.students-body-section .abroad .abroad-content a:hover{
+    background-color: transparent;
+}
+
+}
+
+
+
+
+
+
+/*
+nav{
+    background:#7892BD;
+    height: 80px;
+    width: 100%;
+  }
+  
+  .header-image{
+      display: flex;
+  }
+  .header-image img{
+      height: 70px;
+      margin: 8px 0px 0px 20px;
+      color: white;
+  }
+  .header-image p{
+      color: white;
+      padding: 24px 0px 0px 8px;
+      text-align: center;
+  }
+  span{
+      font-size: 24px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: -32px;
+    
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+    text-decoration: underline;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 24px;
+    cursor: pointer;
+    display: none;
+    margin-top: 32px;
+  }
+  #check{
+    display: none;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #7892BD;
+    top: 112px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  */
