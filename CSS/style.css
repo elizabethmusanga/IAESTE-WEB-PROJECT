@@ -268,12 +268,6 @@ a.active,a:hover{
     height: fit-content;
 }
 
-.students-contents-section .students-tittle{
-    width: 80%;
-    margin: auto;
-    font-size: 24px;
-    padding-top: 16px;
-}
 .students-contents-section .students-image{
     background-image: url("../assets/students.jpg");
     background-repeat: no-repeat;
@@ -496,10 +490,30 @@ a.active,a:hover{
  }
 
  /*STUDENTS MOBILE VIEW*/
- .students-contents-section .students-tittle{
-    width: 75%;
+ .students-contents-section .students-image{
+     height: 80vh;
+ }
+ .students-contents-section .tittle{
+    position: absolute;
+    top: 24%;
+    left: 40%;
+    transform: translate(-24%, -40%);
+    font-size: 36px;
+}
+.students-contents-section .students-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    height: 20vh;
+}
+.students-contents-section .students-text p{
+    width: 100%;
     margin: auto;
     font-size: 20px;
+    line-height: 32px;
 }
 .students-contents-section .students-body-section{
     width: 100%;
