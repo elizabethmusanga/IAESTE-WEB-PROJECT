@@ -314,26 +314,58 @@ ul {
     transform: rotate(180deg);
     transition: all 0.9s ease-in-out;
 }
-.members{
+
+.container{
+    width: 50%;
+    margin: 10px auto;
+  }
+  .courasel{
+    height: 200px;
+    overflow: hidden;
+  }
+  .slider{
     display: flex;
-    width: 75%;
-    margin: auto;
-}
-.members .member-items{
-    text-align: center;
-    padding: 16px;
-    margin: 16px;
-}
-.members .member-items a:hover{
-    background: white;
-}
-.members .member-items img{
-    height: 100px;
-    width: auto;
-}
-.contact-container{
-    background-color: whitesmoke;
-}
+    height: 100%;
+    width: 400%;
+    transition: all 0.9s;
+  }
+  .slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider section a{
+      display:  flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .slider section p{
+      font-size: 20px;
+      font-weight: 900;
+  }
+  .slider section img{
+      height: 150px;
+  }
+  .arrows{
+    position: absolute;
+    top: 150%; 
+    cursor: pointer;
+  }
+  .arrows i{
+      font-size: 54px;
+  }
+  .left{
+    left: 10px;
+    position: absolute;
+  }
+  .right{
+    position: absolute;
+    left: 535px;
+  }
+  
+/*CONTACT*/
 .contact{
     display: flex;
     width: 70%;
