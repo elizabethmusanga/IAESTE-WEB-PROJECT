@@ -364,7 +364,25 @@ ul {
     position: absolute;
     left: 535px;
   }
-  
+  /*MEMBERSHIP*/
+  .membership{
+      width: 90%;
+      margin: auto;
+      border-bottom: 1px solid #ccc;
+      padding-top: 16px;
+  }
+  .membership .membership-text p{
+      line-height: 28px;
+      padding-bottom: 16px;
+  }
+  .membership .membership-text span{
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .membership .membership-text a{
+      text-decoration: underline;
+  }
+
 /*CONTACT*/
 .contact{
     display: flex;

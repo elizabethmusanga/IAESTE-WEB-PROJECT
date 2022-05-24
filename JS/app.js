@@ -41,3 +41,11 @@ rightArrow.addEventListener('click', function(){
   sectionIndex = (sectionIndex < 3) ? sectionIndex +1 :3;
   slider.style.transform='translate('+ (sectionIndex) * -25 +'%)';
 })
+
+//membership button
+
+function downloadMessage(){
+  if (confirm("do you want to download the file again?")){
+    
+  }
+}
