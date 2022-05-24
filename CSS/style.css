@@ -30,7 +30,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .header-image p{
-    color: #1b9bff;
+    color: white;
     padding: 24px 0px 0px 8px;
     text-align: center;
 }
@@ -43,12 +43,10 @@ span{
     justify-content: space-between;
 }
 
-
-
 .logo-btn {
     border: none;
     background-color: transparent;
-    color: ;
+    color: white;
     font-size: 2rem;
     margin: 0.5rem;
     cursor: pointer;
@@ -78,17 +76,23 @@ ul {
       column-gap: 1rem;
       justify-self: end;
     }
+    .nav-link{
+        background: #1a84d7;
+        padding: 8px 8px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+    .nav-link:hover{
+        background: #559ed7;
+    }
     .nav-links a {
       text-transform: capitalize;
-      color: #1b9bff;
+      color: white;
       font-weight: bold;
       letter-spacing: 0.5rem;
       -webkit-transition: all ease 0.3s;
       transition: all ease 0.3s;
-    }
-    .nav-links a:hover {
-    padding-top: 10px;
-    color: #5A5B76;
+      border: none;
     }
     .nav-center {
       display: grid;
