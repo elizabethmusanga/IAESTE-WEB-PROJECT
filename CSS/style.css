@@ -11,14 +11,16 @@ font-family: 'Poppins', sans-serif;
 }
 
 /*navbar*/
-
+.nav{
+    background-color:  #0b3d59;
+}
 .header-image{
     display: flex;
 }
 .header-image img{
     height: 70px;
     margin: 8px 0px 0px 20px;
-    color: #1b9bff;
+    color: white;
 }
 
 .nav-center {
@@ -46,7 +48,7 @@ span{
 .logo-btn {
     border: none;
     background-color: transparent;
-    color: #1b9bff;
+    color: ;
     font-size: 2rem;
     margin: 0.5rem;
     cursor: pointer;
@@ -102,7 +104,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background: #5A5B76;
+    background: #0b3d59;
     z-index: 2;
     box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
   }
@@ -224,7 +226,7 @@ ul {
 .footer{
     text-align: center;
     margin-bottom: 0px;
-    background-color: #7892BD;
+    background-color:  #0b3d59;
     height: fit-content;
 }
 .footer-links{
@@ -266,13 +268,18 @@ ul {
 .footer-content .footer-social a{
     font-size: 24px;
     padding: 16px;
+    color: white;
 }
 .footer-content .footer-social a:hover{
     background-color: transparent;
     text-decoration: none;
 }
+.footer-paragraph{
+    color: white;
+}
 .footer-paragraph a{
     text-decoration: underline;
+    color: white;
 }
 .footer-paragraph a:hover{
     background-color: transparent;
