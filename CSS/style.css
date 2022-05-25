@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif;
 
 /*navbar*/
 .nav{
-    background-color:  #0b3d59;
+    background-color: #0b3d59;
 }
 .header-image{
     display: flex;
@@ -443,7 +443,7 @@ ul {
     background-size: cover;
     filter: blur(1px);
     -webkit-filter: blur(1px);
-    background-color: rgb(86, 86, 239);
+    background-color: #0b3d59;
     background-blend-mode: soft-light;
 }
 .students-contents-section .tittle{
