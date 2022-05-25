@@ -443,8 +443,8 @@ ul {
     background-size: cover;
     filter: blur(1px);
     -webkit-filter: blur(1px);
-    background-color: #0b3d59;
-    background-blend-mode: soft-light;
+    background-color: rgba(28,47,57, 0.9);
+    background-blend-mode: darken;
 }
 .students-contents-section .tittle{
     position: absolute;
@@ -632,29 +632,28 @@ ul {
 
  /*STUDENTS MOBILE VIEW*/
  .students-contents-section .students-image{
-     height: 80vh;
+     height: 60vh;
  }
  .students-contents-section .tittle{
     position: absolute;
     top: 24%;
     left: 40%;
     transform: translate(-24%, -40%);
-    font-size: 36px;
+    font-size: 24px;
 }
 .students-contents-section .students-text{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     text-align: center;
-    width: 80%;
-    transform: translate(-50%, -50%);
-    height: 20vh;
+    width: 90%;
+    transform: translate(-50%, -30%)
 }
 .students-contents-section .students-text p{
     width: 100%;
     margin: auto;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: normal;
 }
 .students-contents-section .students-body-section{
     width: 100%;
@@ -669,20 +668,22 @@ ul {
     margin-top: 16px;
 }
 .students-body-section .abroad .icon-section i{
-    font-size: 100px;
+    font-size: 80px;
 }
 .students-body-section .abroad .abroad-content h3{
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     padding-bottom: 8px;
     margin-top: -24px;
 }
 .students-body-section .abroad .abroad-content p{
     width: 90%;
     margin: auto;
+    font-size: 14px;
 }
 .students-body-section .abroad .abroad-content a{
-    margin-left: 30px;
+    margin-left: 16px;
+    font-size: 14px;
 }
 .students-body-section .abroad .abroad-content a:hover{
     background-color: transparent;
