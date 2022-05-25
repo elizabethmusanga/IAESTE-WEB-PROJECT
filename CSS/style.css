@@ -636,10 +636,10 @@ ul {
  }
  .students-contents-section .tittle{
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 40%;
     transform: translate(-24%, -40%);
-    font-size: 24px;
+    font-size: 26px;
 }
 .students-contents-section .students-text{
     position: absolute;
