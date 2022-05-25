@@ -294,6 +294,9 @@ ul {
     height: 70vh;
     width: 75%;
     margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .iaeste-kenya p{
     margin: 32px 0px 20px 50px;
@@ -375,6 +378,7 @@ ul {
     position: absolute;
     left: 535px;
   }
+ 
   /*MEMBERSHIP*/
   .membership{
       width: 90%;
@@ -510,7 +514,7 @@ ul {
 }
 
 
-/*students intern section*/
+/*STUDENT INTERNSHIP SECTION*/
 .internship .internship-header{
     padding-top: 15px;
     width: 90%;
@@ -520,29 +524,32 @@ ul {
     display: flex;
 }
 .internship-header .internship-image .div1{
-    background-image: url("../assets/students.jpg");
+    background-image: url("../assets/intern-work.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
     width: 30%;
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
     margin: 16px;
     overflow: hidden;
 }
 .internship-header .internship-image .div2{
-    background-image: url("../assets/about-image.jpeg");
+    background-image: url("../assets/intern-discover.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
     width: 30%;
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
     margin: 16px;
     overflow: hidden;
 }
 .internship-header .internship-image .div3{
-    background-image: url("../assets/students.jpg");
+    background-image: url("../assets/intern-fren.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
     width: 30%;
-    background-position: cover;
+    background-position: center;
+    background-size: cover;
     margin: 16px;
     overflow: hidden;
 }
@@ -559,6 +566,36 @@ ul {
 }
 .text p{
     padding: 15px;
+}
+.internship-contents p{
+    margin-top: 8px;
+    line-height: 24px;
+}
+.application-procedure{
+    width: 80%;
+    margin: auto;
+    background: whitesmoke;
+    margin-top: 16px;
+}
+.application-procedure .student-registration{
+    padding: 16px;
+    border-bottom: 5px solid #ccc;
+}
+.application-procedure .student-registration h3{
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+.application-procedure .student-registration p{
+    line-height: 27px;
+}
+.application-procedure .student-registration a{
+    text-decoration: underline;
+}
+.student-application{
+    width: 90%;
+    margin: auto;
+    padding: 16px 0px;
 }
 
 /*MOBILE VIEW*/
@@ -653,7 +690,7 @@ ul {
   }
   .arrows{
     position: absolute;
-    top: 125%; 
+    top: 150%; 
     cursor: pointer;
   }
   .right{
@@ -666,6 +703,10 @@ ul {
     width: 80%;
     margin: auto;
     text-align: center;
+}
+.membership .membership-text p{
+    line-height: normal;
+    font-size: 15px;
 }
  .contact{
      width: 100%;
