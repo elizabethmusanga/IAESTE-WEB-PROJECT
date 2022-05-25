@@ -636,7 +636,7 @@ ul {
  }
  .students-contents-section .tittle{
     position: absolute;
-    top: 16%;
+    top: 20%;
     left: 40%;
     transform: translate(-24%, -40%);
     font-size: 24px;
@@ -652,7 +652,7 @@ ul {
 .students-contents-section .students-text p{
     width: 100%;
     margin: auto;
-    font-size: 14px;
+    font-size: 18px;
     line-height: normal;
 }
 .students-contents-section .students-body-section{
