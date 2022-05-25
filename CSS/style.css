@@ -632,18 +632,18 @@ ul {
 
  /*STUDENTS MOBILE VIEW*/
  .students-contents-section .students-image{
-     height: 60vh;
+     height: 40vh;
  }
  .students-contents-section .tittle{
     position: absolute;
-    top: 24%;
+    top: 16%;
     left: 40%;
     transform: translate(-24%, -40%);
     font-size: 24px;
 }
 .students-contents-section .students-text{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     text-align: center;
     width: 90%;
