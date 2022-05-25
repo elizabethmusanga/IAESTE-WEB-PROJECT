@@ -187,7 +187,7 @@ ul {
 }
 .body-section .about-text{
     padding-top: 10px;
-    border-bottom: 1px solid #5A5B76;
+    border-bottom: 1px solid #ccc;
 }
 .body-section .about-text h3{
     padding-bottom: 16px;
@@ -533,11 +533,13 @@ ul {
       font-weight: 700;
   }
   .body-section-contents .about-text p{
-      font-size: 16px;
-      line-height: 24px;
-      padding-bottom: 16px;
+      font-size: 12px;
+      line-height: 15px;
+      padding-bottom: 14px;
+      padding-top: 14px;
       width: 100%;
       margin: auto;
+      border-top: 1px solid #ccc;
   }
   .about-ending{
       width: 100%;
@@ -593,27 +595,26 @@ ul {
     line-height: 24px;
     font-weight: 400;
  }
- .members{
-    display: flex;
+ .container{
     width: 100%;
+    margin: 10px auto;
+  }
+  .arrows{
+    position: absolute;
+    top: 165%; 
+    cursor: pointer;
+  }
+  .right{
+    position: absolute;
+    left: 325px;
+  }
+  .slider section p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
     margin: auto;
-    flex-wrap: wrap;
-    padding: 40px;
- }
- .members .member-items{
-     width: 40%;
-     margin: auto;
-     margin: 8px 2px 8px 8px;
- }
- .members .member-items img{
-     height: 70px;
- }
- .member-text h2{
-    font-size: 22px;
+    text-align: center;
 }
- .member-text i{
-    font-size: 32px;
- }
  .contact{
      width: 100%;
      margin: auto;
