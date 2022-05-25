@@ -601,7 +601,7 @@ ul {
   }
   .arrows{
     position: absolute;
-    top: 165%; 
+    top: 120%; 
     cursor: pointer;
   }
   .right{
