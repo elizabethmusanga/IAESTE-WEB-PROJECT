@@ -509,6 +509,58 @@ ul {
     background-color: transparent;
 }
 
+
+/*students intern section*/
+.internship .internship-header{
+    padding-top: 15px;
+    width: 90%;
+    margin: auto;
+}
+.internship .internship-image{
+    display: flex;
+}
+.internship-header .internship-image .div1{
+    background-image: url("../assets/students.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: cover;
+    margin: 16px;
+    overflow: hidden;
+}
+.internship-header .internship-image .div2{
+    background-image: url("../assets/about-image.jpeg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: cover;
+    margin: 16px;
+    overflow: hidden;
+}
+.internship-header .internship-image .div3{
+    background-image: url("../assets/students.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: cover;
+    margin: 16px;
+    overflow: hidden;
+}
+.text{
+    background: white;
+    height: 100vh;
+    margin-top: 90%;
+    transition: all 0.3s ease-in-out;
+}
+.text h2{
+    padding-left: 15px;
+    color: #1b9bff;
+    font-size: 30px;
+}
+.text p{
+    padding: 15px;
+}
+
 /*MOBILE VIEW*/
 
 @media (max-width: 768px){

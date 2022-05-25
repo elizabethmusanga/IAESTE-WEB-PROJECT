@@ -49,3 +49,26 @@ function downloadMessage(){
     
   }
 }
+
+//student-inter
+
+function showContent(){
+  document.getElementById('text').style.transform = 'translateY(-27%)'
+}
+function removeContent(){
+  document.getElementById('text').style.transform = 'translateY(0%)'
+}
+
+function showContentOne(){
+  document.getElementById('text1').style.transform = 'translateY(-27%)'
+}
+function removeContentOne(){
+  document.getElementById('text1').style.transform = 'translateY(0%)'
+}
+
+function showContentTwo(){
+  document.getElementById('text2').style.transform = 'translateY(-27%)'
+}
+function removeContentTwo(){
+  document.getElementById('text2').style.transform = 'translateY(0%)'
+}
