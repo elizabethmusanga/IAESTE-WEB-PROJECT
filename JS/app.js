@@ -50,7 +50,7 @@ function downloadMessage(){
   }
 }
 
-//student-inter
+//student-intern
 
 function showContent(){
   document.getElementById('text').style.transform = 'translateY(-27%)'
@@ -72,3 +72,18 @@ function showContentTwo(){
 function removeContentTwo(){
   document.getElementById('text2').style.transform = 'translateY(0%)'
 }
+
+
+//student intern mobile slider
+
+
+
+//membership button
+
+function downloadMessage(){
+  if (confirm("do you want to download the file again?")){
+    
+  }
+}
+
+

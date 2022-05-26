@@ -567,6 +567,10 @@ ul {
 .text p{
     padding: 15px;
 }
+.internship-contents{
+    width: 90%;
+    margin: auto;
+}
 .internship-contents p{
     margin-top: 8px;
     line-height: 24px;
@@ -596,6 +600,103 @@ ul {
     width: 90%;
     margin: auto;
     padding: 16px 0px;
+}
+
+/*INTERNSHIP MOBILE VIEW SECTION*/
+.intern-mobile{
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+.intern-mobile .intern-mobile-image{
+    display: flex;
+    width: 200%;
+}
+.intern-mobile .intern-mobile-image .image1{
+    background-image: url("../assets/intern-work.jpeg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    margin: 16px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.intern-mobile .intern-mobile-image .image2{
+    background-image: url("../assets/intern-discover.jpeg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    margin: 16px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.intern-mobile .intern-mobile-image .image3{
+    background-image: url("../assets/intern-fren.jpeg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    margin: 16px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.mobile-text, .mobile-text1, .mobile-text2{
+    background-color: white;
+    position: relative;
+    top: 30%;
+    height: 24vh;
+    border-bottom: 5px solid blue;
+    text-align: start;
+}
+.mobile-text .intern-head{
+    color: blue;
+}
+.mobile-text1 .intern-head{
+    color: blue;
+}
+.mobile-text2 .intern-head{
+    color: blue;
+}
+.mobile-text .intern-text{
+    text-align: start;
+    font-size: 14px;
+    width: 100%;
+    margin: auto;
+    padding-top: 16px;
+}
+.mobile-text1 .intern-text{
+    text-align: start;
+    font-size: 14px;
+    width: 100%;
+    margin: auto;
+    padding-top: 16px;
+}
+.mobile-text2 .intern-text{
+    text-align: start;
+    font-size: 14px;
+    width: 100%;
+    margin: auto;
+    padding-top: 16px;
+}
+
+.intern-arrows{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.intern-arrows span i{
+    color: blue;
+    margin-left: 50px;
+}
+.intern-arrows p{
+    font-size: 16px;
+    padding-top: 0px;
 }
 
 /*MOBILE VIEW*/
@@ -783,95 +884,38 @@ ul {
     background-color: transparent;
 }
 
+/*INTERNSHIP ABROAD*/
+
+.internship-header{
+    display: none;
+}
+.intern-mobile{
+    display: block;
+}
+.internship-contents{
+    width: 98%;
+    margin: auto;
+}
+.internship-contents p{
+    font-size: 14px;
+}
+.internship-contents h2{
+    font-size: 18px;
+    padding-top: 16px;
+}
+.application-procedure{
+    width: 98%;
+    margin: auto;
+}
+.application-procedure .student-registration{
+    width: 100%;
+}
+.application-procedure .student-registration p{
+    font-size: 14px;
+    line-height: 16px;
+}
+.student-application p{
+    font-size: 14px;
 }
 
-
-
-
-
-
-/*
-nav{
-    background:#7892BD;
-    height: 80px;
-    width: 100%;
-  }
-  
-  .header-image{
-      display: flex;
-  }
-  .header-image img{
-      height: 70px;
-      margin: 8px 0px 0px 20px;
-      color: white;
-  }
-  .header-image p{
-      color: white;
-      padding: 24px 0px 0px 8px;
-      text-align: center;
-  }
-  span{
-      font-size: 24px;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-    margin-top: -32px;
-    
-  }
-  nav ul li{
-    display: inline-block;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
-    text-decoration: underline;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 24px;
-    cursor: pointer;
-    display: none;
-    margin-top: 32px;
-  }
-  #check{
-    display: none;
-  }
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #7892BD;
-    top: 112px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-  */
+}
