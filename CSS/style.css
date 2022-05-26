@@ -649,7 +649,7 @@ ul {
     background-color: white;
     position: relative;
     top: 40%;
-    height: 24vh;
+    height: fit-content;
     border-bottom: 5px solid blue;
     text-align: start;
 }
