@@ -616,7 +616,7 @@ ul {
     background-image: url("../assets/intern-work.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
-    width: 70%;
+    width: 100%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -627,7 +627,7 @@ ul {
     background-image: url("../assets/intern-discover.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
-    width: 70%;
+    width: 100%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -638,7 +638,7 @@ ul {
     background-image: url("../assets/intern-fren.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
-    width: 70%;
+    width: 100%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -648,7 +648,7 @@ ul {
 .mobile-text, .mobile-text1, .mobile-text2{
     background-color: white;
     position: relative;
-    top: 30%;
+    top: 40%;
     height: 24vh;
     border-bottom: 5px solid blue;
     text-align: start;
@@ -693,7 +693,6 @@ ul {
 .intern-arrows span i{
     color: blue;
     margin-left: 50px;
-    font-size: 40px;
 }
 .intern-arrows p{
     font-size: 16px;
