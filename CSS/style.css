@@ -625,7 +625,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image2{
     background-image: url("../assets/intern-discover.jpeg");
-    height: 50vh;
+    height: 45vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -636,7 +636,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image3{
     background-image: url("../assets/intern-fren.jpeg");
-    height: 50vh;
+    height: 45vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
