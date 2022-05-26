@@ -614,7 +614,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image1{
     background-image: url("../assets/intern-work.jpeg");
-    height: 45vh;
+    height: 75vh;
     background-repeat: no-repeat;
     width: 50%;
     background-position: center;
@@ -625,7 +625,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image2{
     background-image: url("../assets/intern-discover.jpeg");
-    height: 45vh;
+    height: 75vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -636,7 +636,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image3{
     background-image: url("../assets/intern-fren.jpeg");
-    height: 45vh;
+    height: 75vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -648,19 +648,22 @@ ul {
 .mobile-text, .mobile-text1, .mobile-text2{
     background-color: white;
     position: relative;
-    top: 40%;
-    height: fit-content;
+    top: 36%;
+    height: 22vh;
     border-bottom: 5px solid blue;
     text-align: start;
 }
 .mobile-text .intern-head{
     color: blue;
+    padding-top: 8px;
 }
 .mobile-text1 .intern-head{
     color: blue;
+    padding-top: 8px;
 }
 .mobile-text2 .intern-head{
     color: blue;
+    padding-top: 8px;
 }
 .mobile-text .intern-text{
     text-align: start;
@@ -674,14 +677,14 @@ ul {
     font-size: 14px;
     width: 100%;
     margin: auto;
-    padding-top: 16px;
+    padding-top: 8px;
 }
 .mobile-text2 .intern-text{
     text-align: start;
     font-size: 14px;
     width: 100%;
     margin: auto;
-    padding-top: 16px;
+    padding-top: 8px;
 }
 
 .intern-arrows{
