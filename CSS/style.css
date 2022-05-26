@@ -648,43 +648,38 @@ ul {
 .mobile-text, .mobile-text1, .mobile-text2{
     background-color: white;
     position: relative;
-    top: 28%;
-    height: 22vh;
+    top: 30%;
+    height: 20vh;
     border-bottom: 5px solid blue;
     text-align: start;
 }
 .mobile-text .intern-head{
     color: blue;
-    padding-top: 8px;
 }
 .mobile-text1 .intern-head{
     color: blue;
-    padding-top: 8px;
 }
 .mobile-text2 .intern-head{
     color: blue;
-    padding-top: 8px;
 }
 .mobile-text .intern-text{
     text-align: start;
     font-size: 14px;
     width: 100%;
     margin: auto;
-    padding-top: 8px;
+   
 }
 .mobile-text1 .intern-text{
     text-align: start;
     font-size: 14px;
     width: 100%;
     margin: auto;
-    padding-top: 8px;
 }
 .mobile-text2 .intern-text{
     text-align: start;
     font-size: 14px;
     width: 100%;
     margin: auto;
-    padding-top: 8px;
 }
 
 .intern-arrows{
