@@ -616,7 +616,7 @@ ul {
     background-image: url("../assets/intern-work.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
-    width: 30%;
+    width: 70%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -627,7 +627,7 @@ ul {
     background-image: url("../assets/intern-discover.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
-    width: 30%;
+    width: 70%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -638,7 +638,7 @@ ul {
     background-image: url("../assets/intern-fren.jpeg");
     height: 60vh;
     background-repeat: no-repeat;
-    width: 30%;
+    width: 70%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -693,6 +693,7 @@ ul {
 .intern-arrows span i{
     color: blue;
     margin-left: 50px;
+    font-size: 40px;
 }
 .intern-arrows p{
     font-size: 16px;
@@ -895,6 +896,7 @@ ul {
 .internship-contents{
     width: 98%;
     margin: auto;
+    padding-bottom: 16px;
 }
 .internship-contents p{
     font-size: 14px;
