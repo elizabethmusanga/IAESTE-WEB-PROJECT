@@ -610,13 +610,13 @@ ul {
 }
 .intern-mobile .intern-mobile-image{
     display: flex;
-    width: 200%;
+    width: 230%;
 }
 .intern-mobile .intern-mobile-image .image1{
     background-image: url("../assets/intern-work.jpeg");
-    height: 60vh;
+    height: 45vh;
     background-repeat: no-repeat;
-    width: 150%;
+    width: 50%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -625,9 +625,9 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image2{
     background-image: url("../assets/intern-discover.jpeg");
-    height: 60vh;
+    height: 50vh;
     background-repeat: no-repeat;
-    width: 150%;
+    width: 100%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -636,9 +636,9 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image3{
     background-image: url("../assets/intern-fren.jpeg");
-    height: 60vh;
+    height: 50vh;
     background-repeat: no-repeat;
-    width: 150%;
+    width: 100%;
     background-position: center;
     background-size: cover;
     margin: 16px;
@@ -648,7 +648,7 @@ ul {
 .mobile-text, .mobile-text1, .mobile-text2{
     background-color: white;
     position: relative;
-    top: 30%;
+    top: 40%;
     height: 24vh;
     border-bottom: 5px solid blue;
     text-align: start;
@@ -698,7 +698,10 @@ ul {
     font-size: 16px;
     padding-top: 0px;
 }
-
+.intern-arrows .right .rightb{
+    position: relative;
+    left: -200%;
+}
 /*MOBILE VIEW*/
 
 @media (max-width: 768px){
