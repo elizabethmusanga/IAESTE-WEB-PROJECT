@@ -700,7 +700,123 @@ ul {
     position: relative;
     left: -200%;
 }
-/*MOBILE VIEW*/
+
+/*employers section*/
+.employers-section{
+    height: fit-content;
+}
+.employers-image-section{
+    width: 100%;
+    margin: auto;
+    background: dodgerblue;
+}
+.employer-image-topic{
+    font-size: 32px;
+    padding: 24px;
+    color: white;
+}
+.employer-image{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 32px;
+    flex-wrap: wrap;
+}
+.employer-image img{
+    height: 300px;
+    width: auto;
+    border-radius: 5px;
+}
+.employers-image-section .employer-topic{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding: 24px;
+}
+.icon-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+.icon-section .icon-part{
+    padding: 64px;
+}
+.icon-section .icon-part i{
+    font-size: 200px;
+}
+.icon-section .icon-text-part{
+    padding: 64px;
+}
+.icon-section .icon-text-part h3{
+    padding-bottom: 16px;
+}
+.icon-section .icon-text-part .icon-link{
+    text-decoration: underline;
+}
+
+/*Employer inter*/
+.employer-intern-section{
+    height: fit-content; 
+    margin-bottom: 40px;
+}
+.employer-intern-section .opening-text{
+    color: #0b3d59;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.employer-intern-section .content-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-top: 24px;
+}
+.employer-intern-section .section-one{
+    width: 60%;
+    margin-right: 32px;
+}
+.employer-intern-section .intern-open-image{
+    background-image: url('../assets/employers3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    height: 72vh;
+}
+.section-two{
+    padding-left: 24px;
+}
+.section-two .section-two-heading{
+    color: #0b3d59;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.intern-open-body-text .employer-registration a{
+    text-decoration: underline;
+}
+.contact-us-section{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 24px;
+}
+.container-contact-items .container-item{
+    display: flex;
+    padding: 8px 8px;
+    font-size: 12px;
+}
+.container-contact-items .container-item span{
+    font-size: 12px;
+    margin: 0px 4px;
+}
+
+/*=========MOBILE VIEW=========*/
 
 @media (max-width: 768px){
     /*NAV-MOBILE-VIEW*/
