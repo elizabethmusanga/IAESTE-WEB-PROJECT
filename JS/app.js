@@ -3,7 +3,7 @@ const navBtn = document.querySelector(".logo-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 
-// add fixed class to navbar
+//add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 80) {
     navbar.classList.add("navbar-fixed");
