@@ -19,10 +19,42 @@ closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
 
+//drop-downs for footer
+const dropButtons = document.querySelectorAll('.one');
+const dropButtonsTwo = document.querySelectorAll('.two');
+const dropButtonsThree = document.querySelectorAll('.three');
 
-// document.querySelector(".navbar-btn").addEventListener("click", function () {
-// document.querySelector(".navbar-wrapper").classList.toggle("change");
-// });
+const dropShows = document.querySelectorAll('.ones');
+const dropShowsTwos = document.querySelectorAll('.twos');
+const dropShowsThrees = document.querySelectorAll('.threes');
+
+//for drop show one
+for(const dropButton of dropButtons){
+  dropButton.addEventListener('click', ()=>{
+   for(const dropShow of dropShows){
+     dropShow.style.display = 'block';
+   };
+  });
+};
+
+//for drop show two
+for(const dropButtonTwo of dropButtonsTwo){
+  dropButtonTwo.addEventListener('click', ()=>{
+    for(const dropShowTwo of dropShowsTwos){
+      dropShowTwo.style.display = 'block';
+    };
+  });
+};
+
+//for drop show three
+for(const dropButtonThree of dropButtonsThree){
+  dropButtonThree.addEventListener('click', ()=>{
+    for(const dropShowThree of dropShowsThrees){
+      dropShowThree.style.display = 'block';
+    };
+  });
+};
+
 
 //slider show
 const slider = document.querySelector('.slider');
@@ -31,16 +63,16 @@ const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
 
 var sectionIndex = 0;
-// <!-- left Aroow Funcrion -->
+
 leftArrow.addEventListener('click', function(){
   sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 0;
   slider.style.transform = 'translate('+ (sectionIndex) * -25 +'%)';
-})
-// <!-- right Arrow Function -->
+});
+
 rightArrow.addEventListener('click', function(){
   sectionIndex = (sectionIndex < 3) ? sectionIndex +1 :3;
   slider.style.transform='translate('+ (sectionIndex) * -25 +'%)';
-})
+});
 
 //membership button
 
@@ -86,4 +118,4 @@ function downloadMessage(){
   }
 }
 
-
+//max number
