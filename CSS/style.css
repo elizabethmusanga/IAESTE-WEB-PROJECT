@@ -439,7 +439,6 @@ ul {
       display: flex;
       position: absolute;
       top: 50%;
-      background-color: #eee;
       color: #555;
       height: 50px;
       width: 45px;
@@ -448,7 +447,7 @@ ul {
       align-items: center;
       border-radius: 50%;
       cursor: pointer;
-      font-size: 24px;
+      font-size: 40px;
   }
   .left{
       left: 25px;
@@ -1047,10 +1046,13 @@ ul {
 .contact{
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.contact-map{
+    width: 100%;
 }
 .section-container{
     margin-top: 2rem;
+    margin-left: 1rem;
 }
 .container-item{
     font-size: 14px;
