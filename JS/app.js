@@ -23,6 +23,10 @@ closeBtn.addEventListener("click", function () {
 const dropButtons = document.querySelectorAll('.one');
 const dropButtonsTwo = document.querySelectorAll('.two');
 const dropButtonsThree = document.querySelectorAll('.three');
+//return buttons
+const returnButtonsOne = document.querySelectorAll('.lefts');
+const returnButtonsTwo = document.querySelectorAll('.left-two');
+const returnButtonsThree = document.querySelectorAll('.left-three');
 
 const dropShows = document.querySelectorAll('.ones');
 const dropShowsTwos = document.querySelectorAll('.twos');
@@ -33,29 +37,71 @@ for(const dropButton of dropButtons){
   dropButton.addEventListener('click', ()=>{
    for(const dropShow of dropShows){
      dropShow.style.display = 'block';
+     dropButton.style.display = 'none';
+     for(const returnButtonOne of returnButtonsOne){
+       returnButtonOne.style.display = 'block';
+     };
    };
   });
 };
-
 //for drop show two
 for(const dropButtonTwo of dropButtonsTwo){
   dropButtonTwo.addEventListener('click', ()=>{
     for(const dropShowTwo of dropShowsTwos){
       dropShowTwo.style.display = 'block';
+      dropButtonTwo.style.display ='none';
+      for(const returnButtonTwo of returnButtonsTwo){
+        returnButtonTwo.style.display = 'block';
+      };
     };
   });
 };
-
 //for drop show three
 for(const dropButtonThree of dropButtonsThree){
   dropButtonThree.addEventListener('click', ()=>{
     for(const dropShowThree of dropShowsThrees){
       dropShowThree.style.display = 'block';
+      dropButtonThree.style.display = 'none';
+    };
+    for(const returnButtonThree of returnButtonsThree){
+      returnButtonThree.style.display = 'block';
+    }
+  });
+};
+//back drop
+for(const returnButtonOne of returnButtonsOne){
+  returnButtonOne.addEventListener('click', ()=>{
+    for(const dropShow of dropShows){
+      dropShow.style.display = "none";
+      returnButtonOne.style.display = 'none';
+    }
+    for(const dropButton of dropButtons){
+      dropButton.style.display = 'block';
     };
   });
 };
-
-
+for(const returnButtonTwo of returnButtonsTwo){
+  returnButtonTwo.addEventListener('click', ()=>{
+    for(const dropShowTwo of dropShowsTwos){
+      dropShowTwo.style.display = 'none';
+      returnButtonTwo.style.display = 'none';
+    };
+    for(const dropButtonTwo of dropButtonsTwo){
+      dropButtonTwo.style.display = 'block';
+    };
+  });
+};
+for(const returnButtonThree of returnButtonsThree){
+  returnButtonThree.addEventListener('click', ()=>{
+    for(const dropShowThree of dropShowsThrees){
+      dropShowThree.style.display = 'none';
+      returnButtonThree.style.display = 'none';
+    };
+    for(const dropButtonThree of dropButtonsThree){
+      dropButtonThree.style.display = 'block';
+    }
+  })
+}
 //slider show
 const slider = document.querySelector('.slider');
 

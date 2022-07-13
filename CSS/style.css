@@ -289,9 +289,10 @@ ul {
     margin-bottom: 8px;
     text-transform: uppercase;
 }
-.right-drop{
+.right-drop, .left-drop{
     display: none;
 }
+
 .footer-links .link-items .drop-content{
     color: white;
     padding: 0px;
@@ -964,6 +965,12 @@ ul {
     margin-right: 1rem;
     font-size: 30px;
     display: block;
+}
+.left-drop{
+    float: right;
+    margin-right: 1rem;
+    font-size: 30px;
+    display: none;
 }
 .footer-links .link-items .drop-content{
     color: white;
