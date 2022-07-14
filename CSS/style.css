@@ -254,11 +254,9 @@ ul {
     background-color: white;
 }
 .about-ending .about-ending-item img{
-    height: 100px;
+    height: 200px;
 }
-.about-ending .about-ending-item i{
-    font-size: 100px;
-}
+
 .body-map-container{
     padding-bottom: 16px;
 }
