@@ -258,18 +258,20 @@ ul {
     position: relative;
     margin-top: 2rem;
     display: none;
+    /* border: 1px solid; */
+}
+.home-courasel{
+    position: absolute;
+    width: 200%;
+    height: 100%;
 }
 .about-ending-slider{
     display: flex;
-    width: 200%;
-    height: 100%;
-    position: absolute;
     transition: 1s all ease-in-out;
     justify-content: space-evenly;
 }
 .about-ending-item{
     width: 100%;
-    /* position: relative; */
 }
 .about-ending-item a:hover{
     background-color: white;
@@ -278,17 +280,19 @@ ul {
     height: 200px;
 }
 .home-arrows{
-    position: absolute;
-    top: 35%;
-    left: 0;
-    font-size: 60px;
-    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -24px;
+    color: #1a84d7;
 }
-.home-arrows.arrow-right{
-    right: -100%;
+.home-arrow{
+    vertical-align: middle;
+    font-size: 25px;
 }
-.home-arrows.arrow-left{
-    left: -50%;
+.home-arrows p{
+    letter-spacing: 5px;
+    margin-left: 4px;
 }
 /* for mobile view end*/
 
