@@ -755,27 +755,19 @@ ul {
  .mobile-text1 .intern-head,
  .mobile-text2 .intern-head{
     color: blue;
-    font-size: 18px;
+    font-size: 20px;
     margin: 8px 0px 0px 8px;
 }
 
-.mobile-text .intern-text{
-    text-align: start;
-    font-size: 14px;
-    width: 100%;
-    margin: auto;
-   
-}
+.mobile-text .intern-text,
 .mobile-text1 .intern-text,
 .mobile-text2 .intern-text,
 .mobile-text3 .intern-text{
     text-align: start;
     font-size: 14px;
     width: 100%;
-    margin: auto;
     margin-left: 8px;
-    margin-top: 4px;
-    font-size: 13px;
+    line-height: 22px;
 }
 
 .arrows-buttons{
@@ -1103,14 +1095,14 @@ ul {
  .students-contents-section .students-image{
     background-image: url("../assets/students.jpg");
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 65vh;
     background-position: center;
     background-size: cover;
 }
 .students-text-section{
     position: absolute;
     background-color: rgba(23,41,44, 0.9);
-    height: 75vh;
+    height: 65vh;
     width: 100%;
 }
 .students-contents-section .tittle{
@@ -1119,20 +1111,19 @@ ul {
     font-size: 20px;
 }
 .students-contents-section .students-text{
-    font-size: 14px;
+    font-size: 16px;
     line-height: normal;
     width: 95%;
     text-align: center;
-    line-height: 19px;
+    line-height: 24px;
 }
 .apply{
     font-size: 12px;
     left: 35%;
-    padding: 4px 14px;
+    padding: 8px 16px;
     border: none;
     top: 78%;
 }
-
 .students-contents-section .students-body-section{
     width: 100%;
 }
