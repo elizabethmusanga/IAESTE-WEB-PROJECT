@@ -120,12 +120,12 @@ const homeRightArrow = document.querySelector('.arrow-right');
 let sectionIndex = 0;
 homeLeftArrow.addEventListener('click', ()=>{
   sectionIndex = (sectionIndex > 0) ? -1: 1;
-  homeSlider.style.transform = 'translate('+ (sectionIndex) * -100 +'%)';
+  homeSlider.style.transform = 'translate('+ (sectionIndex) * -50 +'%)';
 });
 
 homeRightArrow.addEventListener('click', ()=>{
   sectionIndex = (sectionIndex < 1) ? sectionIndex +1 : 0;
-  homeSlider.style.transform = 'translate('+ (sectionIndex) * -100 +'%)';
+  homeSlider.style.transform = 'translate('+ (sectionIndex) * -50 +'%)';
 });
 
 //local committes courasel
