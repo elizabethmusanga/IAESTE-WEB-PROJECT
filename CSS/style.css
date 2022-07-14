@@ -252,7 +252,7 @@ ul {
 /* for mobile view start*/
 .about-ending{
     display: flex;
-    width: 80%;
+    width: 200px;
     height: 230px;
     margin: auto;
     justify-content: space-evenly;
@@ -290,7 +290,7 @@ ul {
     right: -90%;
 }
 .home-arrows.arrow-left{
-    left: -8%;
+    left: -5%;
 }
 /* for mobile view end*/
 
