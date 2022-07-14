@@ -99,20 +99,36 @@ for(const returnButtonThree of returnButtonsThree){
     };
     for(const dropButtonThree of dropButtonsThree){
       dropButtonThree.style.display = 'block';
-    }
-  })
-}
+    };
+  });
+};
+
+
 //slider show
 const slider = document.querySelector('.slider');
 const studentSlider = document.querySelector('.intern-slider');
+const homeSlider = document.querySelector('.about-ending-slider');
 
 const leftArrows = document.querySelectorAll('.left');
 const rightArrows = document.querySelectorAll('.right');
 const internLeftArrow = document.querySelector('.leftb');
 const internRightArrow = document.querySelector('.rightb');
+const homeLeftArrow = document.querySelector('.arrow-left');
+const homeRightArrow = document.querySelector('.arrow-right');
 
+//home courasel
 let sectionIndex = 0;
+homeLeftArrow.addEventListener('click', ()=>{
+  sectionIndex = (sectionIndex > 0) ? -1: 1;
+  homeSlider.style.transform = 'translate('+ (sectionIndex) * -100 +'%)';
+});
 
+homeRightArrow.addEventListener('click', ()=>{
+  sectionIndex = (sectionIndex < 1) ? sectionIndex +1 : 0;
+  homeSlider.style.transform = 'translate('+ (sectionIndex) * -100 +'%)';
+});
+
+//local committes courasel
 for(const leftArrow of leftArrows){
   leftArrow.addEventListener('click', function(){
   sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 3;
@@ -127,6 +143,7 @@ for(const rightArrow of rightArrows){
 });
 }
 
+//students intern courasel
 internLeftArrow.addEventListener('click', (e)=>{
   sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
   studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
