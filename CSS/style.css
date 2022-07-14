@@ -285,10 +285,10 @@ ul {
     cursor: pointer;
 }
 .home-arrows.arrow-right{
-    right: 15%;
+    right: -100%;
 }
 .home-arrows.arrow-left{
-    left: 15%;
+    left: -50%;
 }
 /* for mobile view end*/
 
