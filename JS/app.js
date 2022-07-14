@@ -104,22 +104,37 @@ for(const returnButtonThree of returnButtonsThree){
 }
 //slider show
 const slider = document.querySelector('.slider');
+const studentSlider = document.querySelector('.intern-slider');
 
-const leftArrow = document.querySelector('.left');
-const rightArrow = document.querySelector('.right');
+const leftArrows = document.querySelectorAll('.left');
+const rightArrows = document.querySelectorAll('.right');
+const internLeftArrow = document.querySelector('.leftb');
+const internRightArrow = document.querySelector('.rightb');
 
-var sectionIndex = 0;
+let sectionIndex = 0;
 
-leftArrow.addEventListener('click', function(){
-  sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 0;
+for(const leftArrow of leftArrows){
+  leftArrow.addEventListener('click', function(){
+  sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 3;
   slider.style.transform = 'translate('+ (sectionIndex) * -25 +'%)';
 });
+};
 
-rightArrow.addEventListener('click', function(){
-  sectionIndex = (sectionIndex < 3) ? sectionIndex +1 :3;
+for(const rightArrow of rightArrows){
+  rightArrow.addEventListener('click', function(){
+  sectionIndex = (sectionIndex < 3) ? sectionIndex +1 :0;
   slider.style.transform='translate('+ (sectionIndex) * -25 +'%)';
 });
+}
 
+internLeftArrow.addEventListener('click', (e)=>{
+  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
+  studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
+});
+internRightArrow.addEventListener('click', (e)=>{
+  sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
+  studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
+});
 //membership button
 
 function downloadMessage(){
@@ -131,21 +146,21 @@ function downloadMessage(){
 //student-intern
 
 function showContent(){
-  document.getElementById('text').style.transform = 'translateY(-27%)'
+  document.getElementById('text').style.transform = 'translateY(-75%)'
 }
 function removeContent(){
   document.getElementById('text').style.transform = 'translateY(0%)'
 }
 
 function showContentOne(){
-  document.getElementById('text1').style.transform = 'translateY(-27%)'
+  document.getElementById('text1').style.transform = 'translateY(-75%)'
 }
 function removeContentOne(){
   document.getElementById('text1').style.transform = 'translateY(0%)'
 }
 
 function showContentTwo(){
-  document.getElementById('text2').style.transform = 'translateY(-27%)'
+  document.getElementById('text2').style.transform = 'translateY(-78%)'
 }
 function removeContentTwo(){
   document.getElementById('text2').style.transform = 'translateY(0%)'

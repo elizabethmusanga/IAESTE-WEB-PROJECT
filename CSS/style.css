@@ -397,8 +397,8 @@ ul {
 .container{
     width: 50%;
     margin: 10px auto;
-    max-height: 200px;
-    min-height: 200px;
+    max-height: 250px;
+    min-height: 250px;
     position: relative;
     padding: 1rem 0;
   }
@@ -413,7 +413,7 @@ ul {
     display: flex;
     height: 100%;
     width: 400%;
-    transition: all 0.9s ease-in-out 0.5ms;
+    transition: all 0.9s ease-in-out;
     position: relative;
   }
   .slider section{
@@ -429,13 +429,13 @@ ul {
       align-items: center;
   }
   .slider section p{
-      font-size: 20px;
-      font-weight: 900;
+      font-size: 15px;
+      text-align: start;
+      font-weight: normal;
   }
   .slider section img{
-      height: 150px;
+      height: 200px;
   }
-
   .arrows{
       display: flex;
       position: absolute;
@@ -495,7 +495,7 @@ ul {
 }
 
 
-/*STUDENT-SECTION*/
+/*STUDENT-SECTION MOBILE VIEW*/
 
 .students-page{
     height: fit-content;
@@ -504,31 +504,57 @@ ul {
 .students-contents-section .students-image{
     background-image: url("../assets/students.jpg");
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 80vh;
     background-position: center;
     background-size: cover;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-    background-color: rgba(28,47,57, 0.9);
-    background-blend-mode: darken;
+}
+.students-text-section{
+    position: absolute;
+    background-color: rgba(9, 17, 22, 0.9);
+    height: 80vh;
+    width: 100%;
 }
 .students-contents-section .tittle{
     position: absolute;
     color: white;
-    top: 24%;
-    left: 10%;
-    transform: translate(-24%, -10%);
-    font-size: 36px;
+    top: 15%;
+    left: 5%;
+    transform: translate(-15%, -10%);
+    font-size: 30px;
+    background-color: #1a84d7;
+    padding: 2px 4px;
+    border-radius: 5px;
 }
 .students-contents-section .students-text{
     color: white;
     position: absolute;
-    top: 54%;
+    top: 50%;
     left: 50%;
-    text-align: center;
-    width: 80%;
+    /* text-align: center; */
+    width: 90%;
     transform: translate(-50%, -50%);
-    height: 20vh;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 900;
+}
+.apply{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    /* transform: translate(-50%, 0); */
+    font-size: 24px;
+    padding: 8px 24px;
+    background-color: #1b9bff;
+    border-radius: 5px;
+    transition: 0.5s all ease-in-out;
+    border: none;
+}
+.apply:hover{
+    transform: scale(1.1);
+}
+.apply a{
+    color: white;
+    font-weight: 900;
 }
 .students-contents-section .students-text p{
     width: 75%;
@@ -594,6 +620,7 @@ ul {
     background-size: cover;
     margin: 16px;
     overflow: hidden;
+    position: relative;
 }
 .internship-header .internship-image .div2{
     background-image: url("../assets/intern-discover.jpeg");
@@ -604,6 +631,7 @@ ul {
     background-size: cover;
     margin: 16px;
     overflow: hidden;
+    position: relative;
 }
 .internship-header .internship-image .div3{
     background-image: url("../assets/intern-fren.jpeg");
@@ -614,20 +642,25 @@ ul {
     background-size: cover;
     margin: 16px;
     overflow: hidden;
+    position: relative;
 }
 .text{
     background: white;
-    height: 100vh;
-    margin-top: 90%;
-    transition: all 0.3s ease-in-out;
+    height: fit-content;
+    position: absolute;
+    top: 90%;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 16px;
 }
 .text h2{
-    padding-left: 15px;
+    padding-left: 10px;
     color: #1b9bff;
     font-size: 30px;
 }
 .text p{
-    padding: 15px;
+    padding: 8px 0 8px 15px;
+    border-bottom: 5px solid blue;
+    border-radius: 5px;
 }
 .internship-contents{
     width: 90%;
@@ -664,7 +697,7 @@ ul {
     padding: 16px 0px;
 }
 
-/*INTERNSHIP MOBILE VIEW SECTION*/
+/*INTERNSHIP MOBILE VIEW SECTION DEVICES 768PX*/
 .intern-mobile{
     width: 100%;
     overflow: hidden;
@@ -672,11 +705,12 @@ ul {
 }
 .intern-mobile .intern-mobile-image{
     display: flex;
-    width: 230%;
+    width: 300%;
+    transition: 0.9s ease-in-out;
 }
 .intern-mobile .intern-mobile-image .image1{
     background-image: url("../assets/intern-work.jpeg");
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -687,7 +721,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image2{
     background-image: url("../assets/intern-discover.jpeg");
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -698,7 +732,7 @@ ul {
 }
 .intern-mobile .intern-mobile-image .image3{
     background-image: url("../assets/intern-fren.jpeg");
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
     width: 100%;
     background-position: center;
@@ -710,20 +744,21 @@ ul {
 .mobile-text, .mobile-text1, .mobile-text2{
     background-color: white;
     position: relative;
-    top: 30%;
-    height: 20vh;
+    top: 60%;
+    height: 40%;
     border-bottom: 5px solid blue;
     text-align: start;
+    display: flex;
+    flex-direction: column;
 }
-.mobile-text .intern-head{
+.mobile-text .intern-head,
+ .mobile-text1 .intern-head,
+ .mobile-text2 .intern-head{
     color: blue;
+    font-size: 18px;
+    margin: 8px 0px 0px 8px;
 }
-.mobile-text1 .intern-head{
-    color: blue;
-}
-.mobile-text2 .intern-head{
-    color: blue;
-}
+
 .mobile-text .intern-text{
     text-align: start;
     font-size: 14px;
@@ -731,37 +766,35 @@ ul {
     margin: auto;
    
 }
-.mobile-text1 .intern-text{
+.mobile-text1 .intern-text,
+.mobile-text2 .intern-text,
+.mobile-text3 .intern-text{
     text-align: start;
     font-size: 14px;
     width: 100%;
     margin: auto;
-}
-.mobile-text2 .intern-text{
-    text-align: start;
-    font-size: 14px;
-    width: 100%;
-    margin: auto;
+    margin-left: 8px;
+    margin-top: 4px;
+    font-size: 13px;
 }
 
-.intern-arrows{
-    position: relative;
+.arrows-buttons{
     display: flex;
+    color: blue;
+    align-items: center;
     justify-content: center;
+    letter-spacing: 4px;
+}
+.arrows-buttons i{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+.arrows-buttons p{
+    font-size: 12px;
 }
 
-.intern-arrows span i{
-    color: blue;
-    margin-left: 50px;
-}
-.intern-arrows p{
-    font-size: 16px;
-    padding-top: 0px;
-}
-.intern-arrows .right .rightb{
-    position: relative;
-    left: -200%;
-}
 
 /*employers section*/
 .employers-section{
@@ -1064,31 +1097,42 @@ ul {
 .container-item{
     font-size: 14px;
 }
+
+
  /*STUDENTS MOBILE VIEW*/
  .students-contents-section .students-image{
-     height: 40vh;
- }
- .students-contents-section .tittle{
+    background-image: url("../assets/students.jpg");
+    background-repeat: no-repeat;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+}
+.students-text-section{
     position: absolute;
-    top: 16%;
-    left: 40%;
-    transform: translate(-24%, -40%);
-    font-size: 26px;
+    background-color: rgba(23,41,44, 0.9);
+    height: 75vh;
+    width: 100%;
+}
+.students-contents-section .tittle{
+    top: 10%;
+    left: 10%;
+    font-size: 20px;
 }
 .students-contents-section .students-text{
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    text-align: center;
-    width: 90%;
-    transform: translate(-50%, -30%)
-}
-.students-contents-section .students-text p{
-    width: 100%;
-    margin: auto;
-    font-size: 18px;
+    font-size: 14px;
     line-height: normal;
+    width: 95%;
+    text-align: center;
+    line-height: 19px;
 }
+.apply{
+    font-size: 12px;
+    left: 35%;
+    padding: 4px 14px;
+    border: none;
+    top: 78%;
+}
+
 .students-contents-section .students-body-section{
     width: 100%;
 }
@@ -1121,9 +1165,9 @@ ul {
 }
 .students-body-section .abroad .abroad-content a:hover{
     background-color: transparent;
-}
+} 
 
-/*INTERNSHIP ABROAD*/
+/*INTERNSHIP ABROAD MOBILE VIEW*/
 
 .internship-header{
     display: none;
@@ -1157,7 +1201,9 @@ ul {
 .student-application p{
     font-size: 14px;
 }
-/*employers mobile view*/
+
+
+/*EMPLOYERS MOBILE VIEW*/
 .employers-image-section{
     display: none;
 }
