@@ -226,6 +226,7 @@ ul {
 .body-section .about-text{
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
 }
 .body-section .about-text h3{
     padding-bottom: 16px;
@@ -285,6 +286,7 @@ ul {
     justify-content: center;
     margin-top: -16px;
     color: #1a84d7;
+    display: none;
 }
 .home-arrow{
     vertical-align: middle;
@@ -297,7 +299,114 @@ ul {
 }
 /* for mobile view end*/
 
+/* testimonials */
+.testimonials{
+    background-color: #f5fbff;
+    /* padding: 16px 0; */
+    height: fit-content;
+    padding: 6rem 0;
+}
+.testimonials-head{
+    /* border: 1px solid; */
+    width: 45%;
+    margin-left: 2rem;
+    text-align: center;
+}
+.testimonials-head h2{
+    font-weight: normal;
+    color: #0b3d59;
+    font-size: 30px;
+}
+.testimonials-head p{
+    font-weight: normal;
+    color: #9c9c9c;
+    margin-top: 1.5rem;
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
 
+.testimonials-section{
+    /* border: 1px solid; */
+    width: 75%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.testimonials-items{
+    display: flex;
+    padding: 8px;
+    width: 400%;
+    transition: 0.5s ease-in-out;
+}
+.testimonial-item{
+    width: 500px;
+    max-width: 500px;
+    min-width: 400px;
+    position: relative;
+    height: 200px;
+    max-height: 200px;
+    min-height: 150px;
+    box-shadow: 0 0 1px #555;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+}
+.testimonial-item:first-child{
+    margin-left: 0;
+}
+.testimonial-image{
+    height: 55px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+.testimonial-item p{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.testimonial-item .intern-name{
+    position: absolute;
+    top: 75%;
+}
+.testimonial-item .read-more{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    border: none;
+    background-color: #1b9bff;
+    padding: 6px;
+    border-radius: 5px;
+}
+.testimonial-item .read-more a{
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+}
+.testimonial-arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: #1a84d7;
+}
+.testimonial-arrow i{
+    font-size: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.testimonial-arrow p{
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0 16px;
+}
+.testimonials-section .end{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 25px;
+    color: #0b3d59;
+}
 .body-map-container{
     padding-bottom: 16px;
 }
@@ -323,6 +432,7 @@ ul {
     margin-left: 32px;
     color: white;
     margin-top: 8px;
+   
 }
 .footer-links .link-items p{
     margin-bottom: 8px;
@@ -338,8 +448,8 @@ ul {
     font-weight: lighter;
     line-height: 24px;
     text-align: start;
+    
 }
-
 .footer-links .link-items a:hover{
     background-color: transparent;
 }
@@ -468,9 +578,9 @@ ul {
       align-items: center;
   }
   .slider section p{
-      font-size: 20px;
+      font-size: 24px;
       text-align: start;
-      font-weight: 700;
+      font-weight: 900;
   }
   .slider section img{
       height: 250px;
@@ -487,7 +597,7 @@ ul {
       align-items: center;
       border-radius: 50%;
       cursor: pointer;
-      font-size: 40px;
+      font-size: 50px;
   }
   .left{
       left: 25px;
@@ -997,9 +1107,14 @@ ul {
   .about-ending{
     display: flex;
 }
+.home-arrows{
+    display: flex;
+}
 .about-ending-desk{
     display: none;
 }
+
+/* footer */
   .footer{
       padding-bottom: 16px;
       text-align: start;
@@ -1047,7 +1162,18 @@ ul {
       padding-left: 1rem;
       margin-bottom: 0px;
   }
-
+  .testimonials-head{
+      width: 100%;
+      margin: 0;
+      text-align: start;
+      padding-left: 2rem;
+  }
+  .testimonials-section{
+      width: 100%;
+  }
+  .testimonial-item{
+      width: 400px;
+  }
  /*IAESTE KENYA MOBILE VIEW*/
  .iaeste-kenya .home-image{
     height: fit-content;
@@ -1073,11 +1199,11 @@ ul {
     padding: 2px 8px;
 }
 
- .committee-text{
+ /* .committee-text{
     margin-top: 2rem;
     margin-left: 6px;
     margin-right: 4px;
-}
+} */
  .committee-text p{
     font-size: 14px;
     line-height: 22px;
@@ -1097,7 +1223,7 @@ ul {
     text-align: center;
 }
 .slider section img{
-    height: 100px;
+    height: 150px;
 }
 .arrows{
     height: 40px;
