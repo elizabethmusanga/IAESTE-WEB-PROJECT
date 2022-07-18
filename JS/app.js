@@ -108,7 +108,7 @@ for(const returnButtonThree of returnButtonsThree){
 const slider = document.querySelector('.slider');
 const studentSlider = document.querySelector('.intern-slider');
 const homeSlider = document.querySelector('.about-ending-slider');
-const testimonialSlider = document.querySelector('.testimonials-items');
+const testimonialSlider = document.querySelector('.testimonials-section-mobile');
 
 const leftArrows = document.querySelectorAll('.left');
 const rightArrows = document.querySelectorAll('.right');
@@ -119,14 +119,14 @@ const internRightArrow = document.querySelector('.rightb');
 const homeLeftArrows = document.querySelectorAll('.arrow-left');
 const homeRightArrows = document.querySelectorAll('.arrow-right');
 
-const testimonialLeftArrows = document.querySelectorAll('.left-testimonial');
-const testimonialRightArrows = document.querySelectorAll('.right-testimonial');
+const testimonialLeftArrows = document.querySelectorAll('.test-left');
+const testimonialRightArrows = document.querySelectorAll('.test-right');
 
 let sectionIndex = 0;
 //home courasel
 for(const homeLeftArrow of homeLeftArrows){
   homeLeftArrow.addEventListener('click', ()=>{
-  sectionIndex = (sectionIndex > 0) ? -1: 1;
+  sectionIndex = (sectionIndex > 0) ? -1: -1;
   homeSlider.style.transform = 'translate('+ (sectionIndex) * -50 +'%)';
 });
 };
@@ -140,16 +140,16 @@ for(const homeRightArrow of homeRightArrows){
 
 for(const testimonialLeftArrow of testimonialLeftArrows){
   testimonialLeftArrow.addEventListener('click', ()=>{
-    sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 5;
-    testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -25 +'%)';
+    sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 3;
+    testimonialSlider.style.transform = 'translate('+(sectionIndex) * -97 +'%)';
   });
 };
 
 for(const testimonialRightArrow of testimonialRightArrows){
-  testimonialRightArrow.addEventListener('click', ()=>{
-    sectionIndex = (sectionIndex < 5) ? sectionIndex +1: 0;
-    testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -25 +'%)';
-  });
+  testimonialRightArrow.addEventListener('click', function(){
+  sectionIndex = (sectionIndex < 3) ? sectionIndex +1 : 0;
+  testimonialSlider.style.transform='translate('+ (sectionIndex) * -97 +'%)';
+});
 };
 
 //local committes courasel
@@ -165,17 +165,17 @@ for(const rightArrow of rightArrows){
   sectionIndex = (sectionIndex < 3) ? sectionIndex +1 :0;
   slider.style.transform='translate('+ (sectionIndex) * -25 +'%)';
 });
-}
+};
 
 //students intern courasel
-internLeftArrow.addEventListener('click', (e)=>{
-  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
-  studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
-});
-internRightArrow.addEventListener('click', (e)=>{
-  sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
-  studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
-});
+// internLeftArrow.addEventListener('click', (e)=>{
+//   sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
+//   studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
+// });
+// internRightArrow.addEventListener('click', (e)=>{
+//   sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
+//   studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
+// });
 //membership button
 
 function downloadMessage(){
