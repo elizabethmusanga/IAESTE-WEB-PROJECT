@@ -430,7 +430,7 @@ ul {
 }
 .test-two{
     background-image: url('../assets/amon.jpg');
-    background-position-y: calc(55%);
+    background-position-y: calc(75%);
 }
 .test-three{
     background-image: url('../assets/faith.png');
@@ -1212,17 +1212,13 @@ ul {
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      /* border: 1px solid; */
-      /* background-color: red; */
   }
   .testimonials-section-mobile{
       width: 100%;
       display: grid;
       grid-template-columns: repeat(4, 100%);
       column-gap: 3%;
-      /* overflow: hidden; */
       padding: 0 0.5rem 0 1rem;
-      /* transform: translate(-99%); */
       transition: 0.9s ease-in-out;
   }
   .testimonials-section-mobile .testimonials-items{
@@ -1253,7 +1249,7 @@ ul {
   }
   .test-three{
     background-image: url('../assets/faith.png');
-    background-position-y: calc(90%);
+    background-position-y: calc(110%);
 }
  /*IAESTE KENYA MOBILE VIEW*/
  .iaeste-kenya .home-image{
