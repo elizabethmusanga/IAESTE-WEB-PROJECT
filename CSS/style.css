@@ -1219,7 +1219,7 @@ ul {
       grid-template-columns: repeat(4, 100%);
       column-gap: 3%;
       /* overflow: hidden; */
-      padding: 0 1rem;
+      padding: 0 0.5rem 0 1rem;
       /* transform: translate(-99%); */
       transition: 0.9s ease-in-out;
   }
