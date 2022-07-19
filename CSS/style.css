@@ -335,20 +335,22 @@ ul {
     margin: auto;
     /* border: 1px solid; */
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 2%;
     row-gap: 5%;
 }
 .testimonials-section .testimonials-items{
     height: 30vh;
-    /* border: 1px solid; */
-    color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
     position: relative;
     border-radius: 5px;
-    box-shadow:  0 0 16px #eee;
+    box-shadow:  0 0 1px #333;
+    transition: all;
+    transition-duration: 1s;
+}
+.testimonials-section .testimonials-items:hover{
+    transform: scale(1.05);
 }
 .inner-items{
     position: absolute;
@@ -357,9 +359,6 @@ ul {
     top: 50%;
     color: #000;
     height: 15vh;
-    /* border: 1px solid #555;
-    border-top:  transparent;
-    border-radius: 0px 0px 5px 5px; */
 }
 .inner-items .quote{
     padding-left: 2rem;
@@ -367,7 +366,6 @@ ul {
 }
 .inner-items .quote span{
     color: #0b3d59;
-    /* font-size: 23px; */
 }
 .inner-items .read-more{
     position: absolute;
@@ -394,10 +392,8 @@ ul {
     align-items: center;
     justify-content: center;
     display: flex;
-    /* font-size: 20px; */
 }
 .testimonial-arrows p{
-    /* color: red; */
     font-size: 18px;
     margin: 0 1rem;
     letter-spacing: 4px;
@@ -411,7 +407,6 @@ ul {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* border: 1px solid; */
     margin-top: 4rem;
     font-size: 30px;
 }
@@ -430,7 +425,7 @@ ul {
 }
 .test-two{
     background-image: url('../assets/amon.jpg');
-    background-position-y: calc(75%);
+    background-position-y: calc(55%);
 }
 .test-three{
     background-image: url('../assets/faith.png');
@@ -707,7 +702,7 @@ ul {
     transform: translate(-15%, -10%);
     font-size: 30px;
     background-color: #1a84d7;
-    padding: 2px 4px;
+    padding: 2px 16px;
     border-radius: 5px;
 }
 .students-contents-section .students-text{
@@ -720,12 +715,13 @@ ul {
     transform: translate(-50%, -50%);
     line-height: 30px;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 500;
+    text-align: center;
 }
 .apply{
     position: absolute;
     top: 70%;
-    left: 40%;
+    left: 43%;
     /* transform: translate(-50%, 0); */
     font-size: 24px;
     padding: 8px 24px;
@@ -736,6 +732,7 @@ ul {
 }
 .apply:hover{
     transform: scale(1.1);
+    opacity: 0.8;
 }
 .apply a{
     color: white;
@@ -757,23 +754,19 @@ ul {
     padding-bottom: 32px;
 }
 .students-body-section .abroad .icon-section{
-    width: 20%;
-    margin: auto;
-    text-align: center;
-    margin-right: 16px;
+    margin-right: 2rem;
+    padding: 2rem;
 }
+
 .students-body-section .abroad .icon-section i{
     font-size: 150px;
 }
 .students-body-section .abroad .abroad-content{
-    padding-top: 40px;
+    padding: 40px 0px;
 }
 .students-body-section .abroad .abroad-content p{
     font-size: 20px;
-}
-.students-body-section .abroad .abroad-content h3{
-    font-size: 24px;
-    padding-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .students-body-section .abroad .abroad-content h3{
     font-size: 24px;
@@ -831,21 +824,21 @@ ul {
 }
 .text{
     background: white;
-    height: fit-content;
     position: absolute;
-    top: 90%;
+    bottom: -25vh;
     transition: 0.5s ease-in-out;
-    padding-bottom: 16px;
+    border-bottom: 5px solid blue;
+    border-radius: 0 0 5px 5px;
+    height: 30vh;
 }
 .text h2{
     padding-left: 10px;
     color: #1b9bff;
     font-size: 30px;
+    padding-bottom: 1rem;
 }
 .text p{
     padding: 8px 0 8px 15px;
-    border-bottom: 5px solid blue;
-    border-radius: 5px;
 }
 .internship-contents{
     width: 90%;
@@ -903,9 +896,10 @@ ul {
     margin: 16px;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
 .intern-mobile .intern-mobile-image .image2{
-    background-image: url("../assets/intern-discover.jpeg");
+    background-image: url("../assets/amon.jpg");
     height: 60vh;
     background-repeat: no-repeat;
     width: 100%;
@@ -914,9 +908,10 @@ ul {
     margin: 16px;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
 .intern-mobile .intern-mobile-image .image3{
-    background-image: url("../assets/intern-fren.jpeg");
+    background-image: url("../assets/work.png");
     height: 60vh;
     background-repeat: no-repeat;
     width: 100%;
@@ -925,23 +920,25 @@ ul {
     margin: 16px;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
 .mobile-text, .mobile-text1, .mobile-text2{
     background-color: white;
-    position: relative;
-    top: 60%;
-    height: 40%;
+    position: absolute;
+    bottom: 0;
     border-bottom: 5px solid blue;
     text-align: start;
     display: flex;
     flex-direction: column;
+    min-height: 30vh;
+    padding: 0 1rem;
 }
 .mobile-text .intern-head,
  .mobile-text1 .intern-head,
  .mobile-text2 .intern-head{
     color: blue;
-    font-size: 20px;
-    margin: 8px 0px 0px 8px;
+    font-size: 32px;
+    margin: 16px 0px;
 }
 
 .mobile-text .intern-text,
@@ -949,7 +946,7 @@ ul {
 .mobile-text2 .intern-text,
 .mobile-text3 .intern-text{
     text-align: start;
-    font-size: 14px;
+    font-size: 18px;
     width: 100%;
     margin-left: 8px;
     line-height: 22px;
@@ -960,16 +957,17 @@ ul {
     color: blue;
     align-items: center;
     justify-content: center;
-    letter-spacing: 4px;
 }
 .arrows-buttons i{
-    font-size: 20px;
+    font-size: 30px;
     padding: 0;
     margin: 0;
     vertical-align: middle;
 }
 .arrows-buttons p{
-    font-size: 12px;
+    font-size: 20px;
+    margin: 0 1rem;
+    letter-spacing: 4px;
 }
 
 
@@ -1203,7 +1201,7 @@ ul {
       width: 100%;
       margin: 0;
       text-align: start;
-      padding-left: 2rem;
+      padding-left: 1rem;
   }
   .desktop{
       display: none;
@@ -1222,13 +1220,21 @@ ul {
       transition: 0.9s ease-in-out;
   }
   .testimonials-section-mobile .testimonials-items{
-    height: 30vh;
-    color: white;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     border-radius: 5px;
     width: 100%;
+    box-shadow: 0 0 5 #333;
+    transition: all;
+    transition-duration: 1s;
+  }
+  .testimonials-section-mobile .testimonials-items:hover{
+      transform: scale(1.03);
+  }
+  .inner-items{
+      height: 20vh;
   }
   .inner-items .quote{
       padding-left: 1rem;
@@ -1249,8 +1255,11 @@ ul {
   }
   .test-three{
     background-image: url('../assets/faith.png');
-    background-position-y: calc(110%);
-}
+    background-position-y: calc(150%);
+  }
+  .test-two{
+      background-position-y: calc(125%);
+  }
  /*IAESTE KENYA MOBILE VIEW*/
  .iaeste-kenya .home-image{
     height: fit-content;
@@ -1276,11 +1285,6 @@ ul {
     padding: 2px 8px;
 }
 
- /* .committee-text{
-    margin-top: 2rem;
-    margin-left: 6px;
-    margin-right: 4px;
-} */
  .committee-text p{
     font-size: 14px;
     line-height: 22px;
@@ -1360,17 +1364,28 @@ ul {
     border: none;
     top: 78%;
 }
+.students-page{
+    padding-bottom: 2rem;
+}
 .students-contents-section .students-body-section{
     width: 100%;
 }
 .students-body-section .abroad{
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
 }
+
 .students-body-section .abroad .icon-section{
     width: 100%;
     text-align: center;
     margin-top: 16px;
+    padding: 0;
+}
+.students-body-section .abroad .abroad-content{
+    padding: 0;
+    margin-top: 2rem;
+    padding-bottom: 4px;
 }
 .students-body-section .abroad .icon-section i{
     font-size: 80px;
@@ -1382,13 +1397,14 @@ ul {
     margin-top: -24px;
 }
 .students-body-section .abroad .abroad-content p{
-    width: 90%;
-    margin: auto;
-    font-size: 14px;
+    margin-left: 2rem;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 0;
 }
 .students-body-section .abroad .abroad-content a{
-    margin-left: 16px;
-    font-size: 14px;
+    margin-left: 2rem;
+    font-size: 16px;
 }
 .students-body-section .abroad .abroad-content a:hover{
     background-color: transparent;
@@ -1396,37 +1412,37 @@ ul {
 
 /*INTERNSHIP ABROAD MOBILE VIEW*/
 
-.internship-header{
+.intern-desktop{
     display: none;
 }
 .intern-mobile{
     display: block;
 }
-.internship-contents{
-    width: 98%;
-    margin: auto;
-    padding-bottom: 16px;
-}
+
 .internship-contents p{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
 }
 .internship-contents h2{
-    font-size: 18px;
+    font-size: 24px;
     padding-top: 16px;
+    font-weight: normal;
 }
 .application-procedure{
-    width: 98%;
-    margin: auto;
+    width: 90%;
+    margin: 2rem auto;
 }
 .application-procedure .student-registration{
     width: 100%;
 }
 .application-procedure .student-registration p{
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    /* line-height: 16px; */
 }
 .student-application p{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 

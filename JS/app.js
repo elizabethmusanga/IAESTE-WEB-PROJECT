@@ -141,14 +141,14 @@ for(const homeRightArrow of homeRightArrows){
 for(const testimonialLeftArrow of testimonialLeftArrows){
   testimonialLeftArrow.addEventListener('click', ()=>{
     sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 3;
-    testimonialSlider.style.transform = 'translate('+(sectionIndex) * -97 +'%)';
+    testimonialSlider.style.transform = 'translate('+(sectionIndex) * -99 +'%)';
   });
 };
 
 for(const testimonialRightArrow of testimonialRightArrows){
   testimonialRightArrow.addEventListener('click', function(){
   sectionIndex = (sectionIndex < 3) ? sectionIndex +1 : 0;
-  testimonialSlider.style.transform='translate('+ (sectionIndex) * -97 +'%)';
+  testimonialSlider.style.transform='translate('+ (sectionIndex) * -99 +'%)';
 });
 };
 
@@ -168,14 +168,14 @@ for(const rightArrow of rightArrows){
 };
 
 //students intern courasel
-// internLeftArrow.addEventListener('click', (e)=>{
-//   sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
-//   studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
-// });
-// internRightArrow.addEventListener('click', (e)=>{
-//   sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
-//   studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
-// });
+internLeftArrow.addEventListener('click', (e)=>{
+  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
+  studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
+});
+internRightArrow.addEventListener('click', (e)=>{
+  sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
+  studentSlider.style.transform = 'translate('+ (sectionIndex) * -33 +'%)';
+});
 //membership button
 
 function downloadMessage(){
@@ -187,24 +187,24 @@ function downloadMessage(){
 //student-intern
 
 function showContent(){
-  document.getElementById('text').style.transform = 'translateY(-75%)'
+  document.getElementById('text').style.bottom = '0'
 }
 function removeContent(){
-  document.getElementById('text').style.transform = 'translateY(0%)'
+  document.getElementById('text').style.bottom = '-25vh'
 }
 
 function showContentOne(){
-  document.getElementById('text1').style.transform = 'translateY(-75%)'
+  document.getElementById('text1').style.bottom = '0'
 }
 function removeContentOne(){
-  document.getElementById('text1').style.transform = 'translateY(0%)'
+  document.getElementById('text1').style.bottom = '-25vh'
 }
 
 function showContentTwo(){
-  document.getElementById('text2').style.transform = 'translateY(-78%)'
+  document.getElementById('text2').style.bottom = '0'
 }
 function removeContentTwo(){
-  document.getElementById('text2').style.transform = 'translateY(0%)'
+  document.getElementById('text2').style.bottom = '-25vh'
 }
 
 
