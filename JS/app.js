@@ -108,7 +108,7 @@ for(const returnButtonThree of returnButtonsThree){
 const slider = document.querySelector('.slider');
 const studentSlider = document.querySelector('.intern-slider');
 const homeSlider = document.querySelector('.about-ending-slider');
-const testimonialSlider = document.querySelector('.testimonials-section-mobile');
+
 
 const leftArrows = document.querySelectorAll('.left');
 const rightArrows = document.querySelectorAll('.right');
@@ -119,10 +119,10 @@ const internRightArrow = document.querySelector('.rightb');
 const homeLeftArrows = document.querySelectorAll('.arrow-left');
 const homeRightArrows = document.querySelectorAll('.arrow-right');
 
-const testimonialLeftArrows = document.querySelectorAll('.test-left');
-const testimonialRightArrows = document.querySelectorAll('.test-right');
+
 
 let sectionIndex = 0;
+
 //home courasel
 for(const homeLeftArrow of homeLeftArrows){
   homeLeftArrow.addEventListener('click', ()=>{
@@ -138,20 +138,32 @@ for(const homeRightArrow of homeRightArrows){
   });
 };
 
-for(const testimonialLeftArrow of testimonialLeftArrows){
-  testimonialLeftArrow.addEventListener('click', ()=>{
-    sectionIndex = (sectionIndex > 0) ? sectionIndex -1 : 3;
-    testimonialSlider.style.transform = 'translate('+(sectionIndex) * -99 +'%)';
-  });
-};
+const testimonialSlider = document.querySelector('.testimonials-section');
+const leftTestButton = document.querySelector('.test-left');
+const rightTestButton = document.querySelector('.test-right');
 
-for(const testimonialRightArrow of testimonialRightArrows){
-  testimonialRightArrow.addEventListener('click', function(){
-  sectionIndex = (sectionIndex < 3) ? sectionIndex +1 : 0;
-  testimonialSlider.style.transform='translate('+ (sectionIndex) * -99 +'%)';
+leftTestButton.addEventListener('click', ()=>{
+  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
+  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -40 +'%)';
+})
+
+rightTestButton.addEventListener('click', ()=>{
+  sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
+  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -40 +'%)';
 });
-};
 
+const leftButtonMobile = document.querySelector('.test-left-m');
+const rightButtonMobile = document.querySelector('.test-right-m');
+
+leftButtonMobile.addEventListener('click', ()=>{
+  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 3;
+  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -102 +'%)';
+})
+
+rightButtonMobile.addEventListener('click', ()=>{
+  sectionIndex = (sectionIndex < 3) ? sectionIndex +1: 0;
+  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -102 +'%)';
+})
 //local committes courasel
 for(const leftArrow of leftArrows){
   leftArrow.addEventListener('click', function(){
@@ -219,5 +231,3 @@ function downloadMessage(){
     
   }
 }
-
-//max number

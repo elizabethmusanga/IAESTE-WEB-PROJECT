@@ -303,13 +303,11 @@ ul {
 
 .testimonials{
     background-color: #f5fbff;
-    /* padding: 16px 0; */
     height: fit-content;
     padding: 6rem 0;
     position: relative;
 }
 .testimonials-head{
-    /* border: 1px solid; */
     width: 45%;
     margin-left: 1.5rem;
     text-align: center;
@@ -327,81 +325,113 @@ ul {
     font-size: 20px;
     margin-bottom: 4rem;
 }
+
+.testimonials-row{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.testimonials-section{
+    padding: 0.5rem;
+    margin: auto;
+    display: flex;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+}
+.testimonials-items{
+    box-shadow: 0 0 5px #0b3d59;
+    min-height: 50vh;
+    max-height: 80vh;
+    min-width: 25%;
+    position: relative;
+    padding: 5px;
+}
+.testimonials-items:first-of-type{
+    margin-left: 0;
+}
+.testimonials-items{
+    margin-left: 1.5rem;
+}
+.testimonials-items .item-image{
+    text-align: center;
+    height: 100px;
+    position: relative;
+}
+.testimonials-items .item-image img{
+    height: 100%;
+    width: 90px;
+    position: relative;
+    border-radius: 50%;
+}
+.testimonials-items .item-image::after{
+    content: "";
+    padding: 1px;
+    background-color: #1a84d7;
+    display: block;
+    width: 50%;
+    position: absolute;
+    left: 24%;
+    top: 105%;
+}
+.testimonials-section .name{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1rem;
+}
+.testimonials-section .content{
+    text-align: center;
+    margin-top: 1rem;
+}
+.test-btns{
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+.test-btns button{
+    width: 50%;
+    padding: 0.5rem;
+    background-color: #1a84d7;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.test-btns button a{
+    color: white;
+}
+.test-btns button:hover{
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+.test{
+    position: absolute;
+    top: 40%;
+    font-size: 60px;
+    opacity: 0.8;
+}
 .mobile{
     display: none;
 }
-.testimonials-section{
-    width: 90%;
-    margin: auto;
-    /* border: 1px solid; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2%;
-    row-gap: 5%;
+.desk{
+    display: block;
 }
-.testimonials-section .testimonials-items{
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius: 5px;
-    box-shadow:  0 0 1px #333;
-    transition: all;
-    transition-duration: 1s;
+.test-left, .test-left-m{
+    left: 0%;
+    background-color: #eee;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.testimonials-section .testimonials-items:hover{
-    transform: scale(1.05);
+.test-right, .test-right-m{
+    right: 0%;
+    background-color: #eee;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.inner-items{
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    top: 50%;
-    color: #000;
-    height: 15vh;
-}
-.inner-items .quote{
-    padding-left: 2rem;
-    padding-top: 8px;
-}
-.inner-items .quote span{
-    color: #0b3d59;
-}
-.inner-items .read-more{
-    position: absolute;
-    bottom: 0.5rem;
-    left: 5%;
-    border: none;
-    padding: 5px 8px;
-    border-radius: 5px;
-    background-color: #1a84d7;
-    font-size: 16px;
-}
-.inner-items .read-more a{
-    color: #fff;
-}
-.inner-items .name{
-    position: absolute;
-    right: 5%;
-    bottom: 0.5rem;
-    font-size: 20px;
-}
-.testimonial-arrows{
-    position: relative;
-    margin-top: 2rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-.testimonial-arrows p{
-    font-size: 18px;
-    margin: 0 1rem;
-    letter-spacing: 4px;
-}
-.testimonial-arrow i{
-    font-size: 27px;
-    vertical-align: middle;
-}
+
 .end{
     position: relative;
     display: flex;
@@ -418,11 +448,8 @@ ul {
     text-decoration: underline;
 }
 
-/* testimonials background images start */
-.test-one{
-    background-image: url('../assets/allaan2.png');
-    background-position-y: calc(40%);
-}
+
+
 .test-two{
     background-image: url('../assets/amon.jpg');
     background-position-y: calc(55%);
@@ -1149,6 +1176,21 @@ ul {
     display: none;
 }
 
+.testimonials-row{
+    width: 100%;
+}
+.testimonials-items{
+    min-width: 100%;
+}
+.desk{
+    display: none;
+}
+.mobile{
+    display: block;
+}
+.test-left-m, .test-right-m{
+    font-weight: 900;
+}
 /* footer */
   .footer{
       padding-bottom: 16px;
@@ -1203,49 +1245,6 @@ ul {
       text-align: start;
       padding-left: 1rem;
   }
-  .desktop{
-      display: none;
-  }
-  .mobile{
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-  }
-  .testimonials-section-mobile{
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 100%);
-      column-gap: 3%;
-      padding: 0 0.5rem 0 1rem;
-      transition: 0.9s ease-in-out;
-  }
-  .testimonials-section-mobile .testimonials-items{
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius: 5px;
-    width: 100%;
-    box-shadow: 0 0 5 #333;
-    transition: all;
-    transition-duration: 1s;
-  }
-  .testimonials-section-mobile .testimonials-items:hover{
-      transform: scale(1.03);
-  }
-  .inner-items{
-      height: 20vh;
-  }
-  .inner-items .quote{
-      padding-left: 1rem;
-  }
-  .inner-items .name{
-      font-size: 16px;
-  }
-  .inner-items .quote{
-      font-size: 16px;
-      padding-top: 4px;
-  }
   .end{
       font-size: 18px;
       padding: 0 8px;
@@ -1253,13 +1252,8 @@ ul {
   .end p span{
       font-size: 18px;
   }
-  .test-three{
-    background-image: url('../assets/faith.png');
-    background-position-y: calc(150%);
-  }
-  .test-two{
-      background-position-y: calc(125%);
-  }
+  
+
  /*IAESTE KENYA MOBILE VIEW*/
  .iaeste-kenya .home-image{
     height: fit-content;
