@@ -143,12 +143,12 @@ const leftTestButton = document.querySelector('.test-left');
 const rightTestButton = document.querySelector('.test-right');
 
 leftTestButton.addEventListener('click', ()=>{
-  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 2;
+  sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 1;
   testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -40 +'%)';
 })
 
 rightTestButton.addEventListener('click', ()=>{
-  sectionIndex = (sectionIndex < 2) ? sectionIndex +1: 0;
+  sectionIndex = (sectionIndex < 1) ? sectionIndex +1: 0;
   testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -40 +'%)';
 });
 
