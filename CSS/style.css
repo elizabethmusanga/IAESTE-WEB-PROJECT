@@ -435,11 +435,10 @@ ul {
 
 .end{
     position: relative;
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin-top: 4rem;
     font-size: 30px;
+    text-align: center;
 }
 .end p span{
     color: #0b3d59;
