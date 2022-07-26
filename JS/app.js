@@ -157,12 +157,12 @@ const rightButtonMobile = document.querySelector('.test-right-m');
 
 leftButtonMobile.addEventListener('click', ()=>{
   sectionIndex = (sectionIndex > 0) ? sectionIndex -1: 3;
-  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -102 +'%)';
+  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -80 +'%)';
 })
 
 rightButtonMobile.addEventListener('click', ()=>{
   sectionIndex = (sectionIndex < 3) ? sectionIndex +1: 0;
-  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -102 +'%)';
+  testimonialSlider.style.transform = 'translate('+ (sectionIndex) * -85 +'%)';
 })
 //local committes courasel
 for(const leftArrow of leftArrows){

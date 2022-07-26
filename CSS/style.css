@@ -1180,7 +1180,16 @@ ul {
     width: 100%;
 }
 .testimonials-items{
-    min-width: 100%;
+    min-width: 80%;
+    margin: auto 1rem;
+}
+.testimonials-items:first-of-type{
+    margin-left: 2rem;
+}
+.testimonials-section .content{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 18px;
 }
 .desk{
     display: none;
