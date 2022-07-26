@@ -346,6 +346,7 @@ ul {
     min-width: 25%;
     position: relative;
     padding: 5px 8px;
+    border-bottom:  3px solid #1a84d7;
 }
 .testimonials-items:first-of-type{
     margin-left: 0;
@@ -360,7 +361,7 @@ ul {
 }
 .testimonials-items .item-image img{
     height: 100%;
-    width: 100px;
+    width: 105px;
     position: relative;
     border-radius: 50%;
 }
@@ -1180,7 +1181,7 @@ ul {
     width: 100%;
 }
 .testimonials-items{
-    min-width: 85%;
+    min-width: 90%;
     margin: auto 1rem;
 }
 .testimonials-items:first-of-type{
