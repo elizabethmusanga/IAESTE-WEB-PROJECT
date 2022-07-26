@@ -340,12 +340,12 @@ ul {
     transition: all 0.7s ease-in-out;
 }
 .testimonials-items{
-    box-shadow: 0 0 5px #0b3d59;
+    box-shadow: 0 0 2px #0b3d59;
     min-height: 50vh;
     max-height: 80vh;
     min-width: 25%;
     position: relative;
-    padding: 5px;
+    padding: 5px 8px;
 }
 .testimonials-items:first-of-type{
     margin-left: 0;
@@ -360,7 +360,7 @@ ul {
 }
 .testimonials-items .item-image img{
     height: 100%;
-    width: 90px;
+    width: 95px;
     position: relative;
     border-radius: 50%;
 }
@@ -1180,7 +1180,7 @@ ul {
     width: 100%;
 }
 .testimonials-items{
-    min-width: 80%;
+    min-width: 85%;
     margin: auto 1rem;
 }
 .testimonials-items:first-of-type{
